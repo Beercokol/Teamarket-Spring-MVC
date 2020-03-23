@@ -1,0 +1,495 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 1);
+    display: flex;
+    font-size: 30px;
+}
+section#navbar-section{
+    padding-bottom: 80px;
+    color: aliceblue;
+}
+
+div#home-page {
+    position: fixed;
+    width: 100%;
+}
+#nav-categories, #nav-main{
+    padding-top: 0px;
+}
+li {
+    float: left;
+    height: 80px;
+}
+
+div#logo {
+    background-image: url(../images/plantacii-chaya-3840x2160-5k-4k-holmi-derevya-zelenie-5273.jpg);
+}
+p {
+    margin: 0;
+}
+body {
+    margin: 0;
+    height: auto;
+    max-width: 1920px;
+}
+.sec-home{
+    text-align: center;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 45px;
+    text-decoration: none;
+}
+
+li#nav-cart {
+    padding-left: 300px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+#cart-logo {
+    padding: 0px;
+}
+
+li#nav-cart-number {
+    padding-left: 0px;
+    padding-top: 15px;
+    color: white;
+}
+
+a:hover {
+    color: wheat;
+    transition: 1s;
+}
+
+#shop-logo {
+    padding: 0px;
+}
+
+#GB-name {
+    font-size: 60px;
+    color: white;
+    padding: 10px;
+    margin-bottom: 0px;
+    padding-top: 300px;
+    margin-top: 0px;
+}
+
+#logo-GB {
+    margin-top: 0px;
+    color: white;
+    font-size: 40px;
+    padding-bottom: 250px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+}
+
+section#categories {
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+#tea-categories-label {
+    font-size: 60px;
+    margin-top: 0px;
+}
+
+#ShuPuer {
+    font-size: 40px;
+    margin-bottom: 0px;
+    padding-left: 15px;
+}
+
+#ShenPuer {
+    font-size: 40px;
+    margin-bottom: 0px;
+}
+
+div#div-shy,
+div#div-shen {
+    text-align: left;
+    padding-left: 100px;
+    width: 500px;
+    margin: 0;
+}
+
+div#div-dahyn,
+div#div-gaba {
+    text-align: right;
+    padding-right: 100px;
+}
+
+#Gaba,
+#Dahyn {
+    font-size: 40px;
+    margin-bottom: 0px;
+    padding-right: 20px;
+}
+
+div#category-tea {
+    display: flex;
+    margin-left: 480px;
+    padding-bottom: 100px;
+}
+
+section#delivery-section {
+    background-image: url(../images/del-bg.png);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    font-size: 40px;
+    color: white;
+}
+
+div#delivery-case-1,
+div#delivery-case-2,
+div#delivery-case-3 {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-right: 500px;
+}
+
+div#dev-text-1,
+div#dev-text-2,
+div#dev-text-3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 35px;
+    color: white;
+}
+
+div#delivery-cases {
+    display: flex;
+    padding-bottom: 100px;
+}
+
+div#delivery-case-1 {
+    padding-left: 150px;
+}
+
+h4 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+div#delivery-name {
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+
+h5#h5-d {
+    margin-bottom: 0px;
+    padding-bottom: 70px;
+}
+
+section#payment-section {
+    background-image: url(../images/tea-seal.jpg);
+    font-size: 40px;
+    background-size: cover;
+    color: white;
+}
+
+h1#p-h1 {
+    margin-top: 0px;
+    padding-top: 70px;
+}
+
+div#payment-div {
+    display: flex;
+    padding-top: 100px;
+    color: white;
+}
+
+div#p-img {
+    padding-right: 300px;
+    padding-left: 450px;
+    padding-top: 80px;
+}
+
+#p-info {
+    text-align: left;
+    width: 800px;
+    color: white;
+}
+
+#contacts-text{
+    color: aliceblue;
+    font-size: 25px;
+    padding-bottom: 80px;
+}
+
+h1#contacts-logo {
+    color: white;
+    font-size: 40px;
+    padding-top: 50px;
+}
+#contacts-section{
+    background-image: url(../images/bg-c.jpg);
+    height: 900px;
+
+}
+#contacts-map{
+    padding-bottom: 40px;
+}
+
+div#sect-cont {
+}
+div#end-page-div{
+    background-image: url(../images/plantacii-chaya-3840x2160-5k-4k-holmi-derevya-zelenie-5273.jpg);
+    color: aliceblue;
+margin: 0;
+    padding: 0;
+    font-size: 30px;
+
+}
+h3#h3-end-page{
+    margin: 0;
+    padding: 0;
+}
+
+div#admin-navbar-div {
+    margin: 0;
+    padding: 0;
+}
+
+ul#navbar-admin-ul {
+    display: flex;
+    padding-left: 30px;
+    background-color: yellowgreen;
+    height: 80px;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+li#nav-orderEntities,
+li#nav-main,
+li#nav-categories,
+li#nav-persons,
+li#nav-manager {
+    padding-left: 50px;
+    margin: 0;
+    font-size: 30px;
+}
+
+li#nav-logout {
+    margin: 0;
+    padding-left: 300px;
+    font-size: 30px;
+    margin: 0;
+    padding-top: 15px;
+}
+
+button#logout-button {
+    font-size: 25px;
+    font-family: serif;
+    height: 40px;
+    width: 100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 5px;
+    background-color: teal;
+    border-color: teal;
+}
+
+body#body-admin-navbar {
+    padding: 0;
+    margin: 0;
+}
+#cat-flex{
+    width: 300px;
+    padding-left: 143px;
+
+}
+#cat1-flex{
+    display: flex;
+    text-align: center;
+}
+
+.name-logo1{
+    margin: 0;
+    padding-top: 80px;
+    font-size: 35px;
+    padding-bottom: 120px;
+    font-family: "Century Gothic";
+}
+
+#all-tea-name{
+    font-size: 25px;
+    padding-top: 120px;
+}
+#cat-full{
+    background-image: url(../images/cat-bg2.jpg);
+    background-size: 100%;
+}
+.pr-name{
+    font-size:25px ;
+    text-decoration: none;
+    font-family: "Century Gothic";
+}
+
+a{
+    text-decoration: none;
+}
+
+
+#pr-flex{
+    width: 185px;
+    margin: 0;
+    padding-right: 150px;
+    text-align: center;
+
+}
+#product-list-div{
+    display: flex;
+}
+
+#product-list-div{
+    height: 900px;
+    width: 100%;
+}
+.no-margin{
+    margin: 0;
+}
+#prflex{
+    display: flex;
+    width: 185px;
+    margin: auto;
+    padding-bottom: 30px;
+    padding-top: 30px;
+
+}
+#pr-one{
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 25px;
+
+}
+.bg-im{
+    padding-bottom: 50px;
+    padding-top: 50px;
+    background-image: url(../images/bg-p.jpg);
+    background-size: cover;
+}
+.btn-g{
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    padding: .8em 1em calc(.8em + 3px);
+    border-radius: 3px;
+    background: rgb(64,199,129);
+    box-shadow: 0 -3px rgb(53,167,110) inset;
+    transition: 0.2s;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+}
+.btn-g:hover { background: rgb(53, 167, 110); }
+.btn-g:active {
+    background: rgb(33,147,90);
+    box-shadow: 0 3px rgb(33,147,90) inset;
+}
+.title-pr{
+    font-weight: bold;
+
+}
+table {
+    border-spacing: 0 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+th {
+    padding: 10px 20px;
+    background: green;
+    color: yellow;
+    border-right: 1px solid;
+    font-size: 0.9em;
+}
+th:first-child {
+    text-align: left;
+}
+th:last-child {
+    border-right: none;
+}
+td {
+    vertical-align: middle;
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+    border-top: 2px solid #56433D;
+    border-bottom: 2px solid #56433D;
+    border-right: 2px solid #56433D;
+}
+td:first-child {
+    border-left: 2px solid #56433D;
+    border-right: none;
+}
+td:nth-child(2){
+    text-align: left;
+}
+
+#cart-l{
+    color:black;
+    font-size: 35px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+#cart{
+    margin: auto;
+}
+
+.inp-flex{
+    display: flex;
+    width: 203px;
+    height: 220px;
+    margin: auto;
+    padding-bottom: 50px;
+
+}
+.input-1{
+    padding-right: 30px;
+    margin-bottom: 20px;
+    height: 30px;
+    border-radius:  5px;
+}
+#table-pr{
+    width: 603px;
+    margin: auto;
+
+}
+#btn-cart{
+    width: 400px;
+    height: 150px;
+}
+
+#mor{
+    margin: auto;
+    width: 203px;
+
+}
+#btn-flex{
+    display: flex;
+    margin-left: 770px;
+}
+
+#cart-logo1{
+    color: green;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+
+}#product-list-section{
+     flex-wrap: wrap;
+ }
+
+
+
+

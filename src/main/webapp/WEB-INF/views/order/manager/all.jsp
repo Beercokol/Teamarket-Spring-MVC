@@ -1,0 +1,74 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" trimDirectiveWhitespaces="true" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<%@ taglib prefix="compress" uri="http://htmlcompressor.googlecode.com/taglib/compressor" %>
+
+<compress:html removeIntertagSpaces="true">
+    <!DOCTYPE HTML>
+    <html lang="ru">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="title" content="Заказы ">
+        <title>Заказы </title>
+        <link href="<c:url value="/resources/style/style.css"/>" rel="stylesheet">
+
+    </head>
+    <body>
+    <jsp:include page="/WEB-INF/views/other/manager_navbar.jsp"/>
+    <div>
+        <section id="orderEntities">
+            <div >
+                <c:set var="orders_length" value="${fn:length(orders)}"/>
+                <div>
+                    <div>
+                        <b>
+                            <span>Orders</span>
+                            <c:if test="${orders_length eq 0}"><span > - is empty!</span></c:if>
+                        </b>
+                    </div>
+                </div>
+                <c:if test="${orders_length gt 0}">
+                    <div>
+                        <table >
+                            <tr>
+                                <th>Number</th>
+                                <th>Status</th>
+                                <th>Date</th>
+                                <th>Action</th>
+                            </tr>
+                            <c:forEach items="${orders}" var="order">
+                                <tr>
+                                    <td>${order.number}</td>
+                                    <td>
+                                        <c:choose>
+                                            <c:when test="${order.status eq status_new}">
+                                                <span>${order.status.description}</span>
+                                            </c:when>
+                                            <c:otherwise>${order.status.description}</c:otherwise>
+                                        </c:choose>
+                                    </td>
+                                    <td>${order.date}</td>
+                                    <td>
+                                        <a href="<c:url value="/managers/order/view/${order.id}"/>"
+                                           title="Watch order ${order.number}">
+                                            <button  type="submit">Watch</button>
+                                        </a>
+                                        <c:if test="${(order.status eq status_new) or (order.manager eq auth_user)}">
+                                            <a href="<c:url value="/managers/order/edit/${order.id}"/>"
+                                               title="Edit order ${order.number}">
+                                                <button  type="submit">Edit</button>
+                                            </a>
+                                        </c:if>
+                                    </td>
+                                </tr>
+                            </c:forEach>
+                        </table>
+                    </div>
+                </c:if>
+            </div>
+        </section>
+    </div>
+    </body>
+    </html>
+</compress:html>
