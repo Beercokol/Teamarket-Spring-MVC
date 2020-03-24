@@ -1,3 +1,7 @@
+/*
+ * Copyright
+ */
+
 package ru.market.util.translator;
 
 public interface Ascii {

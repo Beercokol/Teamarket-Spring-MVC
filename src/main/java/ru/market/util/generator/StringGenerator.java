@@ -1,3 +1,7 @@
+/*
+ * Copyright
+ */
+
 package ru.market.util.generator;
 
 import java.util.Random;

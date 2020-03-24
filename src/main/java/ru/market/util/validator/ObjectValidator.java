@@ -1,3 +1,7 @@
+/*
+ * Copyright
+ */
+
 package ru.market.util.validator;
 
 import org.springframework.web.multipart.MultipartFile;

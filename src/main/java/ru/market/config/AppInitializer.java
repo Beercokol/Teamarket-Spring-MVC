@@ -1,3 +1,8 @@
+
+/*
+ * Copyright
+ */
+
 package ru.market.config;
 
 import org.springframework.web.context.WebApplicationContext;
@@ -16,7 +21,7 @@ public class AppInitializer extends AbstractAnnotationConfigDispatcherServletIni
      */
     @Override
     protected Class<?>[] getServletConfigClasses() {
-        return new Class<?>[] { WebConfig.class };
+        return new Class<?>[]{WebConfig.class};
     }
 
     /**
@@ -24,10 +29,10 @@ public class AppInitializer extends AbstractAnnotationConfigDispatcherServletIni
      */
     @Override
     protected Class<?>[] getRootConfigClasses() {
-        return new Class<?>[] {
-                RootConfig.class,
-                DatabaseConfig.class,
-                SecurityConfig.class
+        return new Class<?>[]{
+            RootConfig.class,
+            DatabaseConfig.class,
+            SecurityConfig.class
         };
     }
 
@@ -37,7 +42,7 @@ public class AppInitializer extends AbstractAnnotationConfigDispatcherServletIni
      */
     @Override
     protected String[] getServletMappings() {
-        return new String[] { "/" };
+        return new String[]{"/"};
     }
 
     /**
@@ -59,7 +64,7 @@ public class AppInitializer extends AbstractAnnotationConfigDispatcherServletIni
     @Override
     protected DispatcherServlet createDispatcherServlet(final WebApplicationContext context) {
         final DispatcherServlet dispatcherServlet =
-                (DispatcherServlet) super.createDispatcherServlet(context);
+            (DispatcherServlet) super.createDispatcherServlet(context);
         dispatcherServlet.setThrowExceptionIfNoHandlerFound(true);
         return dispatcherServlet;
     }

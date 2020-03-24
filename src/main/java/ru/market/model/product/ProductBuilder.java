@@ -1,3 +1,7 @@
+/*
+ * Copyright
+ */
+
 package ru.market.model.product;
 
 import com.googlecode.htmlcompressor.compressor.Compressor;

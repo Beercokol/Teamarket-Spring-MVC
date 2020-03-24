@@ -1,3 +1,7 @@
+/*
+ * Copyright
+ */
+
 package ru.market.model.user;
 
 import org.springframework.security.core.GrantedAuthority;

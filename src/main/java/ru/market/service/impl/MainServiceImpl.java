@@ -1,3 +1,7 @@
+/*
+ * Copyright
+ */
+
 package ru.market.service.impl;
 import org.springframework.transaction.annotation.Transactional;
 import ru.market.model.model.Model;

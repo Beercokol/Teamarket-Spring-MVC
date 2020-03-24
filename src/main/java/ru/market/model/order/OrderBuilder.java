@@ -1,3 +1,7 @@
+/*
+ * Copyright
+ */
+
 package ru.market.model.order;
 
 import ru.market.model.model.ModelBuilder;

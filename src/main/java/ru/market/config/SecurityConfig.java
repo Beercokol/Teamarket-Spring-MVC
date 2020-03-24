@@ -1,3 +1,7 @@
+/*
+ * Copyright
+ */
+
 package ru.market.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -65,29 +69,29 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
      */
     @Override
     protected void configure(final HttpSecurity httpSecurity)
-            throws Exception {
+        throws Exception {
         httpSecurity
-                .logout()
-                .invalidateHttpSession(false)
-                .and()
-                .authorizeRequests()
-                .antMatchers(ADMIN_REQUEST_URl)
-                .hasRole(UserRole.ADMIN.name())
-                .antMatchers(MANAGER_REQUEST_URl)
-                .hasAnyRole(
-                        UserRole.ADMIN.name(),
-                        UserRole.MANAGER.name()
-                )
-                .anyRequest().permitAll()
-                .and()
-                .formLogin()
-                .loginPage(LOGIN_URL)
-                .usernameParameter(USERNAME)
-                .passwordParameter(PASSWORD)
-                .defaultSuccessUrl("/", false)
-                .and()
-                .exceptionHandling().accessDeniedPage(ACCESS_DENIED_PAGE).and()
-                .csrf().disable();
+            .logout()
+            .invalidateHttpSession(false)
+            .and()
+            .authorizeRequests()
+            .antMatchers(ADMIN_REQUEST_URl)
+            .hasRole(UserRole.ADMIN.name())
+            .antMatchers(MANAGER_REQUEST_URl)
+            .hasAnyRole(
+                UserRole.ADMIN.name(),
+                UserRole.MANAGER.name()
+            )
+            .anyRequest().permitAll()
+            .and()
+            .formLogin()
+            .loginPage(LOGIN_URL)
+            .usernameParameter(USERNAME)
+            .passwordParameter(PASSWORD)
+            .defaultSuccessUrl("/", false)
+            .and()
+            .exceptionHandling().accessDeniedPage(ACCESS_DENIED_PAGE).and()
+            .csrf().disable();
     }
 
     /**

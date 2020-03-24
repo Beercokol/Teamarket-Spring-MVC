@@ -1,3 +1,7 @@
+/*
+ * Copyright
+ */
+
 package ru.market.util.translator;
 
 import static ru.market.util.validator.ObjectValidator.*;

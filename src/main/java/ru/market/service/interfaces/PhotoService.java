@@ -1,3 +1,7 @@
+/*
+ * Copyright
+ */
+
 package ru.market.service.interfaces;
 
 import org.springframework.web.multipart.MultipartFile;

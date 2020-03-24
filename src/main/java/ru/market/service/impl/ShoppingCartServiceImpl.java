@@ -1,3 +1,7 @@
+/*
+ * Copyright
+ */
+
 package ru.market.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;

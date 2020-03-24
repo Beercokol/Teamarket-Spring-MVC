@@ -1,3 +1,7 @@
+/*
+ * Copyright
+ */
+
 package ru.market.model.basket;
 
 import org.springframework.context.annotation.Scope;
@@ -22,7 +26,7 @@ public class ShoppingCart implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    private List<SalePosition> salePositions = new ArrayList<>();
+    private  final List<SalePosition> salePositions = new ArrayList<>();
 
     /**
      * Возвращает описание корзины.
@@ -133,24 +137,23 @@ public class ShoppingCart implements Serializable {
     /**
      * Возвращает цену корзины - цена всех торговых позиций.
      *
-     * @return Значение типа double - цена корзины.
+     * @Return Значение типа double - цена корзины.
      */
     public double getPrice() {
         double price = 0;
-        for (SalePosition salePosition : this.salePositions) {
+        for ( final SalePosition salePosition : this.salePositions) {
             price += salePosition.getPrice();
         }
         return price;
     }
 
-    /**
-     * Возвращает размер корзины - количество товаров в корзине.
+    /** Возвращает размер корзины - количество товаров в корзине.
      *
-     * @return Значение типа int - количество товаров в корзине.
+     * @Return Значение типа int - количество товаров в корзине.
      */
     public int getSize() {
         int size = 0;
-        for (SalePosition salePosition : this.salePositions) {
+        for ( final SalePosition salePosition : this.salePositions) {
             size += salePosition.getNumber();
         }
         return size;

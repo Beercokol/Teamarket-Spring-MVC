@@ -1,3 +1,7 @@
+/*
+ * Copyright
+ */
+
 package ru.market.config;
 
 import org.apache.tomcat.dbcp.dbcp.BasicDataSource;

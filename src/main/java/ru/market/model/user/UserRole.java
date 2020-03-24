@@ -1,3 +1,7 @@
+/*
+ * Copyright
+ */
+
 package ru.market.model.user;
 
 public enum UserRole {

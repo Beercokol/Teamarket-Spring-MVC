@@ -1,3 +1,7 @@
+/*
+ * Copyright
+ */
+
 package ru.market.model.category;
 
 import ru.market.model.model.Model;

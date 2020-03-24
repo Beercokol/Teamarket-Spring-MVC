@@ -1,3 +1,7 @@
+/*
+ * Copyright
+ */
+
 package ru.market.util.compressor;
 
 import com.googlecode.htmlcompressor.compressor.Compressor;

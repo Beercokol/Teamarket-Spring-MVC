@@ -1,3 +1,7 @@
+/*
+ * Copyright
+ */
+
 package ru.market.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;

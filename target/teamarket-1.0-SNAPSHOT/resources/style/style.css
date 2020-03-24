@@ -489,10 +489,7 @@ td:nth-child(2){
 }#product-list-section{
      flex-wrap: wrap;
  }
-.pr-1:nth-child(3n)::after {
-    content: '';
-    width: 100%;
-}
+
 
 
 

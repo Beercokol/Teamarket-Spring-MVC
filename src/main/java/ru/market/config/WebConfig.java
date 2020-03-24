@@ -1,3 +1,7 @@
+/*
+ * Copyright
+ */
+
 package ru.market.config;
 
 import org.springframework.beans.factory.annotation.Value;

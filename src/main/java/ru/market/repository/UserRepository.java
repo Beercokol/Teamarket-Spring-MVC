@@ -1,3 +1,7 @@
+/*
+ * Copyright
+ */
+
 package ru.market.repository;
 
 import ru.market.model.user.User;

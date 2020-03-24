@@ -1,3 +1,7 @@
+/*
+ * Copyright
+ */
+
 package ru.market.util.generator;
 
 public interface Generator<T> {

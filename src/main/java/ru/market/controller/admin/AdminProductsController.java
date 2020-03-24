@@ -1,3 +1,7 @@
+/*
+ * Copyright
+ */
+
 package ru.market.controller.admin;
 
 import org.springframework.beans.factory.annotation.Autowired;
