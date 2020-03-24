@@ -7,97 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="247c573d-e871-4b50-baea-6783b47dd5d3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/copyright/Empty.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/config/AppInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/config/AppInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/config/DatabaseConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/config/DatabaseConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/config/RootConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/config/RootConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/config/SecurityInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/config/SecurityInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/config/WebConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/controller/admin/AdminCategoriesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/controller/admin/AdminCategoriesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/controller/admin/AdminOrdersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/controller/admin/AdminOrdersController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/controller/admin/AdminProductsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/controller/admin/AdminProductsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/controller/admin/AdminUsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/controller/admin/AdminUsersController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/controller/client/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/controller/client/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/controller/manager/ManagerOrdersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/controller/manager/ManagerOrdersController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/controller/manager/ManagerUsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/controller/manager/ManagerUsersController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/model/basket/ShoppingCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/model/basket/ShoppingCart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/model/category/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/model/category/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/model/category/CategoryBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/model/category/CategoryBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/model/model/Builder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/model/model/Builder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/model/model/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/model/model/Model.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/model/model/ModelBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/model/model/ModelBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/model/order/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/model/order/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/model/order/OrderBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/model/order/OrderBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/model/order/OrderStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/model/order/OrderStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/model/photo/Photo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/model/photo/Photo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/model/photo/PhotoBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/model/photo/PhotoBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/model/position/SalePosition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/model/position/SalePosition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/model/product/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/model/product/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/model/product/ProductBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/model/product/ProductBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/model/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/model/user/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/model/user/UserBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/model/user/UserBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/model/user/UserRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/model/user/UserRole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/repository/CategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/repository/CategoryRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/repository/MainRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/repository/MainRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/repository/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/repository/OrderRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/repository/PhotoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/repository/PhotoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/repository/ProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/repository/SalePositionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/repository/SalePositionRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/repository/ShoppingCartRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/repository/ShoppingCartRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/repository/ShoppingCartRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/repository/ShoppingCartRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/service/impl/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/service/impl/CategoryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/service/impl/MainServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/service/impl/MainServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/service/impl/PhotoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/service/impl/PhotoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/service/impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/service/impl/ProductServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/service/impl/SalePositionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/service/impl/SalePositionServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/service/impl/ShoppingCartServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/service/impl/ShoppingCartServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/service/interfaces/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/service/interfaces/CategoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/service/interfaces/MainService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/service/interfaces/MainService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/service/interfaces/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/service/interfaces/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/service/interfaces/PhotoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/service/interfaces/PhotoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/service/interfaces/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/service/interfaces/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/service/interfaces/SalePositionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/service/interfaces/SalePositionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/service/interfaces/ShoppingCartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/service/interfaces/ShoppingCartService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/service/interfaces/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/service/interfaces/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/util/compressor/AbstractCompressor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/util/compressor/AbstractCompressor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/util/compressor/CssCompressor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/util/compressor/CssCompressor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/util/compressor/HtmlCompressor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/util/compressor/HtmlCompressor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/util/generator/Generator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/util/generator/Generator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/util/generator/StringGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/util/generator/StringGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/util/translator/Ascii.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/util/translator/Ascii.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/util/translator/AsciiImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/util/translator/AsciiImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/util/translator/ToLatin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/util/translator/ToLatin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/util/translator/ToLatinImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/util/translator/ToLatinImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/util/translator/Translator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/util/translator/Translator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/util/validator/ObjectValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/util/validator/ObjectValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/market/config/AppInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/market/config/AppInitializer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/market/config/RootConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/market/config/RootConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/market/config/WebConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/market/config/WebConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/market/controller/admin/AdminCategoriesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/market/controller/admin/AdminCategoriesController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/market/controller/admin/AdminOrdersController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/market/controller/admin/AdminOrdersController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/market/controller/admin/AdminProductsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/market/controller/admin/AdminProductsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/market/controller/admin/AdminUsersController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/market/controller/admin/AdminUsersController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/market/service/impl/ShoppingCartServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/market/service/impl/ShoppingCartServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/classes/META-INF/teamarket.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/classes/ru/market/config/AppInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/classes/ru/market/config/AppInitializer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/classes/ru/market/config/RootConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/classes/ru/market/config/RootConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/classes/ru/market/config/WebConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/classes/ru/market/config/WebConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/classes/ru/market/controller/admin/AdminCategoriesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/classes/ru/market/controller/admin/AdminCategoriesController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/classes/ru/market/controller/admin/AdminOrdersController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/classes/ru/market/controller/admin/AdminOrdersController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/classes/ru/market/controller/admin/AdminProductsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/classes/ru/market/controller/admin/AdminProductsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/classes/ru/market/controller/admin/AdminUsersController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/classes/ru/market/controller/admin/AdminUsersController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/classes/ru/market/service/impl/ShoppingCartServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/classes/ru/market/service/impl/ShoppingCartServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/lib/commons-io-2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/product/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/product/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/product/some_list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/product/some_list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/style/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/views/product/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/views/product/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/views/product/some_list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/views/product/some_list.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/resources/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/resources/style/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -170,7 +85,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="D:/script" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -181,15 +96,15 @@
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="ru.market.model.user" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Desktop\teamarket\src\main\webapp\resources" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\User\Desktop\учёба\teamarket\src\main\webapp\resources\images" />
       <recent name="C:\Users\User\Desktop\teamarket\src\main\webapp\resources\images" />
       <recent name="C:\Users\User\Desktop\teamarket\src\main\webapp\resources\images\da_hun_pao" />
       <recent name="C:\Users\User\Desktop\teamarket\src\main\webapp\resources\images\gaba_tea" />
       <recent name="C:\Users\User\Desktop\teamarket\src\main\webapp\resources\images\shen_puer" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\User\Desktop\teamarket\src\main\webapp\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -368,6 +283,9 @@
       <workItem from="1584961636501" duration="82000" />
       <workItem from="1584964103083" duration="294000" />
       <workItem from="1585045107862" duration="3709000" />
+      <workItem from="1585066147472" duration="3995000" />
+      <workItem from="1585074645180" duration="622000" />
+      <workItem from="1585080219074" duration="2794000" />
     </task>
     <servers />
   </component>

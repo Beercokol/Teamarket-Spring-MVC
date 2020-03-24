@@ -2,12 +2,12 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
 <c:if test="${fn:length(products) gt 0}">
     <c:forEach items="${products}" var="product">
-        <div    class="col-xs-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 row pr-1">
-            <div >
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <div    class="col-xs-6 col-sm-6 col-md-6 col-lg-3 col-xl-3" id="pr-2">
+            <div>
                 <a href="<c:url value="/product/${product.url}"/>" title="Go to ${product.title}">
                     <img src="<c:url value="/resources/images/${product.photo.smallUrl}"/>"
                          alt="<c:out value="${product.title}"/>"

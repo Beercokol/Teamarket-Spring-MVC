@@ -8,8 +8,8 @@ ul {
     font-size: 30px;
 }
 section#navbar-section{
-    padding-bottom: 80px;
     color: aliceblue;
+
 }
 
 div#home-page {
@@ -310,6 +310,7 @@ body#body-admin-navbar {
 #cat1-flex{
     display: flex;
     text-align: center;
+    padding-left: 240px;
 }
 
 .name-logo1{
@@ -346,14 +347,9 @@ a{
     text-align: center;
 
 }
-#product-list-div{
-    display: flex;
-}
 
-#product-list-div{
-    height: 900px;
-    width: 100%;
-}
+
+
 .no-margin{
     margin: 0;
 }
@@ -486,10 +482,22 @@ td:nth-child(2){
     font-size: 40px;
     font-family: Geneva, Arial, Helvetica, sans-serif;
 
-}#product-list-section{
-     flex-wrap: wrap;
- }
+}
+#pr-2{
+    flex-wrap: wrap;
+    display: flex;
+    padding-left: 90px;
+    padding-bottom: 50px;
+}
+#div-pr-cont{
+    background-image: url(../images/bg-p.jpg);
+    background-size: cover;
 
+
+}
+#home-page{
+    z-index: 1;
+}
 
 
 
