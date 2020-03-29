@@ -11,6 +11,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="title" content="Новый продукт ">
         <link href="<c:url value="/resources/style/style.css"/>" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
 
         <title>New product </title>
     </head>
@@ -90,11 +92,12 @@
                             <tr>
                                 <th></th>
                                 <td>
-                                    <button  type="submit"
+                                    <button class="btn btn-success" type="submit"
                                             title="Add new product">
                                         Add new product
                                     </button>
-                                    <button  type="reset"
+                                    <button
+                                            class="btn btn-danger" type="reset"
                                             title="reset info ">
                                         Reset
                                     </button>

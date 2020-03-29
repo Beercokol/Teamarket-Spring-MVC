@@ -5,6 +5,7 @@
 <%@ taglib prefix="compress" uri="http://htmlcompressor.googlecode.com/taglib/compressor" %>
 </head>
 <body>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <jsp:include page="/WEB-INF/views/home/navbar.jsp"/>
 <div>
     <section>
@@ -29,7 +30,7 @@
                     <form action="<c:url value="/cart/add"/>" method=post>
                         <input type=hidden name="id" value="<c:out value="${product.id}"/>">
                         <p class="text" title="Add <c:out value="${product.title}"/> in cart">
-                            <button class="btn-g" type="submit">Add in cart</button>
+                            <button class="btn btn-success" type="submit">Add in cart</button>
                         </p>
                     </form>
                 </div>

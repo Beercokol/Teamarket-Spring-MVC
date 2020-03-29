@@ -7,12 +7,76 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="247c573d-e871-4b50-baea-6783b47dd5d3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/goldenBug.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/config/AppInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/config/AppInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/config/SecurityInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/config/SecurityInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/model/basket/ShoppingCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/model/basket/ShoppingCart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/model/category/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/model/category/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/model/category/CategoryBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/model/category/CategoryBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/model/model/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/model/model/Model.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/model/model/ModelBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/model/model/ModelBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/model/order/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/model/order/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/model/photo/Photo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/model/photo/Photo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/model/position/SalePosition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/model/position/SalePosition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/model/product/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/model/product/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/model/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/model/user/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/repository/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/repository/OrderRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/repository/PhotoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/repository/PhotoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/repository/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/market/repository/ShoppingCartRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/market/repository/ShoppingCartRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/cart/cart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/cart/cart.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/category/one.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/category/one.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/navbar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/navbar.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/product/admin/add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/product/admin/add.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/product/admin/all.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/product/admin/all.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/product/admin/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/product/admin/edit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/product/admin/one.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/product/admin/one.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/product/featured.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/product/featured.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/product/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/product/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/product/some_list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/product/some_list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/product/one.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/product/one.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/goldenBug.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/style/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/market/config/AppInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/market/config/AppInitializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/market/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/market/config/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/market/config/SecurityInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/market/config/SecurityInitializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/market/model/basket/ShoppingCart.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/market/model/basket/ShoppingCart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/market/model/category/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/market/model/category/Category.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/market/model/category/CategoryBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/market/model/category/CategoryBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/market/model/model/Model.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/market/model/model/Model.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/market/model/model/ModelBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/market/model/model/ModelBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/market/model/order/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/market/model/order/Order.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/market/model/photo/Photo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/market/model/photo/Photo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/market/model/position/SalePosition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/market/model/position/SalePosition.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/market/model/product/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/market/model/product/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/market/model/user/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/market/model/user/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/classes/ru/market/config/AppInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/classes/ru/market/config/AppInitializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/classes/ru/market/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/classes/ru/market/config/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/classes/ru/market/config/SecurityInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/classes/ru/market/config/SecurityInitializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/classes/ru/market/model/basket/ShoppingCart.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/classes/ru/market/model/basket/ShoppingCart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/classes/ru/market/model/category/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/classes/ru/market/model/category/Category.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/classes/ru/market/model/category/CategoryBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/classes/ru/market/model/category/CategoryBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/classes/ru/market/model/model/Model.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/classes/ru/market/model/model/Model.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/classes/ru/market/model/model/ModelBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/classes/ru/market/model/model/ModelBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/classes/ru/market/model/order/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/classes/ru/market/model/order/Order.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/classes/ru/market/model/photo/Photo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/classes/ru/market/model/photo/Photo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/classes/ru/market/model/position/SalePosition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/classes/ru/market/model/position/SalePosition.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/classes/ru/market/model/product/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/classes/ru/market/model/product/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/classes/ru/market/model/user/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/classes/ru/market/model/user/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/views/cart/cart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/views/cart/cart.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/views/home/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/views/home/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/views/home/navbar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/views/home/navbar.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/views/product/admin/add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/views/product/admin/add.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/views/product/admin/all.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/views/product/admin/all.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/views/product/admin/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/views/product/admin/edit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/views/product/admin/one.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/views/product/admin/one.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/views/product/featured.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/views/product/featured.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/views/product/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/views/product/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/views/product/some_list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/views/product/some_list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/views/product/one.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/WEB-INF/views/product/one.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/resources/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/teamarket-1.0-SNAPSHOT/resources/style/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -85,7 +149,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../AlexCoffee-master" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -96,15 +160,15 @@
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="ru.market.model.user" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\User\Desktop\teamarket\src\main\webapp\resources" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\User\Desktop\учёба\teamarket\src\main\webapp\resources\images" />
       <recent name="C:\Users\User\Desktop\teamarket\src\main\webapp\resources\images" />
       <recent name="C:\Users\User\Desktop\teamarket\src\main\webapp\resources\images\da_hun_pao" />
       <recent name="C:\Users\User\Desktop\teamarket\src\main\webapp\resources\images\gaba_tea" />
       <recent name="C:\Users\User\Desktop\teamarket\src\main\webapp\resources\images\shen_puer" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Desktop\teamarket\src\main\webapp\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -286,6 +350,8 @@
       <workItem from="1585066147472" duration="3995000" />
       <workItem from="1585074645180" duration="622000" />
       <workItem from="1585080219074" duration="2794000" />
+      <workItem from="1585390029649" duration="6961000" />
+      <workItem from="1585484049279" duration="4642000" />
     </task>
     <servers />
   </component>

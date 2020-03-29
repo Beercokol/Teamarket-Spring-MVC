@@ -33,7 +33,9 @@
                         </div>
                     </h3>
                 </div>
+                <div class="cat-list">
                 <jsp:include page="/WEB-INF/views/product/list.jsp"/>
+                </div>
                 <div>
                     <h4 class="sec-home title-pr">
                         <a href="<c:url value="/product/all"/>" title="Go to all products">

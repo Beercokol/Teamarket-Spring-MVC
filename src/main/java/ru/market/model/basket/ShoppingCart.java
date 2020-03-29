@@ -23,7 +23,9 @@ import java.util.List;
         proxyMode = ScopedProxyMode.TARGET_CLASS
 )
 public class ShoppingCart implements Serializable {
-
+    /**
+     *  Используется для указании версии сериализованных данных.
+     */
     private static final long serialVersionUID = 1L;
 
     private  final List<SalePosition> salePositions = new ArrayList<>();
@@ -110,9 +112,6 @@ public class ShoppingCart implements Serializable {
      * Возвращает список всех торговых позиций в корзине.
      * Метод конвертирует список торговых позиций
      * в корзине в список только для чтений и возвращает его.
-     *
-     * @return Объект типа {@link List} - список торговых позиций только
-     * для чтения или пустой список.
      */
     public Collection<SalePosition> getSalePositions() {
         final Collection<SalePosition> positions;
@@ -126,8 +125,6 @@ public class ShoppingCart implements Serializable {
 
     /**
      * Устанавливает список торговых позиций.
-     *
-     * @param positions Список торговых позиций .
      */
     public void setSalePositions(final Collection<SalePosition> positions) {
         clearSalePositions();
@@ -136,8 +133,6 @@ public class ShoppingCart implements Serializable {
 
     /**
      * Возвращает цену корзины - цена всех торговых позиций.
-     *
-     * @Return Значение типа double - цена корзины.
      */
     public double getPrice() {
         double price = 0;
@@ -147,9 +142,8 @@ public class ShoppingCart implements Serializable {
         return price;
     }
 
-    /** Возвращает размер корзины - количество товаров в корзине.
-     *
-     * @Return Значение типа int - количество товаров в корзине.
+    /**
+     * Возвращает размер корзины - количество товаров в корзине.
      */
     public int getSize() {
         int size = 0;

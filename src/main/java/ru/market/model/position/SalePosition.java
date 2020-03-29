@@ -20,12 +20,6 @@ public class SalePosition extends Model {
 
     /**
      * Товар текущей торговой позици.
-     * Значение поля (id объекта photo) сохраняется в колонке "product_id".
-     * Не может быть null.
-     * Между объектами классов {@link Product} и {@link SalePosition}
-     * связь один-к-одному, а именно каждая запись в одной таблице напрямую
-     * связана с отдельной записью в другой таблице. Выборка объекта product
-     * до первого доступа нему, при первом доступе к текущему объекту.
      */
     @OneToOne(fetch = FetchType.EAGER)
     @JoinColumn(
@@ -37,8 +31,6 @@ public class SalePosition extends Model {
 
     /**
      * Количество товаров в текущей торговой позиции.
-     * Значение поля сохраняется в колонке "description".
-     * Не может быть null.
      */
     @Column(
             name = "number",
@@ -48,12 +40,6 @@ public class SalePosition extends Model {
 
     /**
      * Заказ, к которому относится текущая торговая позиция
-     * Значение поля (id объекта order) сохраняется в колонке "order_id".
-     * Не может быть null.
-     * Между объектами классов {@link Order} и {@link SalePosition}
-     * связь многие-к-одному, а именно каждая много заказов могут иметь
-     * одинаковый статус выполнения. Выборка объекта order при первом доступе к нему.
-     * Сущность order автоматически удаляется при удалении текущей.
      */
     @ManyToOne(
             fetch = FetchType.LAZY,
@@ -68,11 +54,6 @@ public class SalePosition extends Model {
 
     /**
      * Возвращает описание торговой позиции.
-     * Переопределенный метод родительского класса {@link Object}.
-     *
-     * @return Значение типа {@link String} - строка описание торговой позиции
-     * (уникальный код позиции, информация о товаре, количество тваров и общая
-     * цена торговой позиции).
      */
     @Override
     public String toString() {
@@ -86,11 +67,6 @@ public class SalePosition extends Model {
 
     /**
      * Сравнивает текущий объект с объектом переданым как параметр.
-     * Переопределенный метод родительского класса {@link Object}.
-     *
-     * @param object объект для сравнения с текущим объектом.
-     * @return Значение типа boolean - результат сравнения текущего объекта
-     * с переданным объектом.
      */
     @Override
     public boolean equals(Object object) {
@@ -109,9 +85,6 @@ public class SalePosition extends Model {
 
     /**
      * Возвращает хеш код объекта.
-     * Переопределенный метод родительского класса {@link Object}.
-     *
-     * @return Значение типа int - уникальный номер объекта.
      */
     @Override
     public int hashCode() {
@@ -120,11 +93,7 @@ public class SalePosition extends Model {
         return result;
     }
 
-    /**
-     * Возвращает общую стоимость торговой позиции (цена товара * количество).
-     *
-     * @return Значение типа double - цена торговой пзиции.
-     */
+
     public double getPrice() {
         return this.number * this.product.getPrice();
     }
@@ -136,58 +105,30 @@ public class SalePosition extends Model {
         this.number++;
     }
 
-    /**
-     * Возвращает товар текущей торговой позиции.
-     *
-     * @return Объект класса {@link Product} - товар позиции.
-     */
     public Product getProduct() {
         return this.product;
     }
 
-    /**
-     * Устанавливает товар для текущей торговой позиции.
-     *
-     * @param product Товар для позиции.
-     */
     public void setProduct(final Product product) {
         this.product = product;
         this.number = isNotNull(product) ? 1 : 0;
     }
 
-    /**
-     * Возвращает номер торговой позиции.
-     *
-     * @return Значение типа {@link String} - номер торговой позиции.
-     */
     public int getNumber() {
         return this.number;
     }
 
     /**
-     * Устанавливает номер торговой позиции.
      * Если входной параметр меньше 0, тогда значение номера будет 0.
-     *
-     * @param number Номер торговой позиции.
      */
     public void setNumber(final int number) {
         this.number = (number > 0) ? number : 0;
     }
 
-    /**
-     * Возвращает заказ, которому пренадлежит текущая торговая позиция.
-     *
-     * @return Объект класса {@link Order} - заказ торговой позиции.
-     */
     public Order getOrder() {
         return this.order;
     }
 
-    /**
-     * Устанавливает заказ, которому пренадлежит текущая торговая позиция.
-     *
-     * @param order Заказ торговой позиции.
-     */
     public void setOrder(final Order order) {
         this.order = order;
     }

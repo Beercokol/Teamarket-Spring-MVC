@@ -34,9 +34,6 @@ public abstract class ModelBuilder<T extends Model, B extends ModelBuilder<T, B>
 
     /**
      * Compresses the given source and returns a compressed result.
-     *
-     * @param source The source to compress.
-     * @return Compressed result.
      */
     protected String compress(final String source) {
         final Compressor compressor = new HtmlCompressor();

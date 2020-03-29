@@ -11,6 +11,8 @@
         <meta name="title" content="${product.title} ">
         <title>${product.title} </title>
         <link href="<c:url value="/resources/style/style.css"/>" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
 
 
     </head>
@@ -74,14 +76,14 @@
                             <td>
                                 <a href="<c:url value="/admin/product/edit/${product.id}"/>"
                                    title="Edit product ${product.title}">
-                                    <button  type="submit">Edit</button>
+                                    <button class="btn btn-success" type="submit">Edit</button>
                                 </a>
                                 <a href="<c:url value="/admin/product/delete/${product.id}"/>"
                                    title="Delete product${product.title}">
-                                    <button  type="submit">Delete</button>
+                                    <button class="btn btn-danger"  type="submit">Delete</button>
                                 </a>
                                 <a href="<c:url value="/admin/product/all"/>" title="Back to the product list">
-                                    <button  type="submit">Back</button>
+                                    <button class="btn btn-info"  type="submit">Back</button>
                                 </a>
                             </td>
                         </tr>

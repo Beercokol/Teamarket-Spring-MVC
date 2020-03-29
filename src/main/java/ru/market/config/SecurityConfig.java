@@ -50,9 +50,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     /**
      * Объект сервиса для работы с зарегистрированными
-     * пользователями. Поле помечано аннотацией @Autowired,
-     * которая позволит Spring автоматически инициализировать
-     * объект.
      */
     @Autowired
     private UserDetailsService userDetailsService;
@@ -63,9 +60,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
      * на "{@value ADMIN_REQUEST_URl}", имеют доступ только пользователи с ролью - администратор.
      * К страницам, URL которых начинается на "{@value MANAGER_REQUEST_URl}", имеют доступ
      * администраторы и менеджера. Чтобы попасть на эти страницы, нужно пройти этам авторизации.
-     *
-     * @param httpSecurity Объект класса HttpSecurity для настройки прав доступа к страницам.
-     * @throws Exception Исключение методов класса HttpSecurity.
      */
     @Override
     protected void configure(final HttpSecurity httpSecurity)
@@ -98,9 +92,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
      * Настройка пользователей с их ролями. Пользователи будут подгружатся с базы данных,
      * используя реализацию методов интерфейса UserDetailsService. Также в памяти сохраняется
      * запись об резервном пользоватети с правами администратора.
-     *
-     * @param builder Объект класса AuthenticationManagerBuilder.
-     * @throws Exception Исключение методов класса  AuthenticationManagerBuilder.
      */
     @Override
     protected void configure(final AuthenticationManagerBuilder builder) throws Exception {

@@ -26,6 +26,7 @@ public class AppInitializer extends AbstractAnnotationConfigDispatcherServletIni
 
     /**
      * Возвращает конфигурации, которые инициализируют Beans.
+     * (Используется для "склеивания элементов")
      */
     @Override
     protected Class<?>[] getRootConfigClasses() {

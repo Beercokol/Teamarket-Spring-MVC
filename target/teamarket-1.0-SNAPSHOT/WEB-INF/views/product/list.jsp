@@ -23,7 +23,7 @@
                     <input type="hidden" name="id" value="<c:out value="${product.id}"/>">
                     <input type="hidden" name="url" value="/product/all">
                     <p class="text" title="Put  <c:out value="${product.title}"/> in cart ">
-                        <button class="btn-g" type="submit">Add in cart</button>
+                        <button class="btn btn-success" type="submit">Add in cart</button>
                     </p>
                 </form>
             </div>

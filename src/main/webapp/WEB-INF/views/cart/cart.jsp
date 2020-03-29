@@ -10,8 +10,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="<c:url value="/resources/style/style.css"/>" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>Document</title>
+
+        <title>Document</title>
     </head>
 
 
@@ -21,12 +23,11 @@
     <div id="navbar">
     <ul name="navbar-ul">
     <li id="logo-name" Golden Bug></li>
-        <li><img src="<c:url value="/resources/images/goldenBug.jpg"/>" height="95" width="95" id="shop-logo" ></li>
+        <li><img src="<c:url value="/resources/images/goldenBug.png"/>" height="95" width="95" id="shop-logo" ></li>
         <li id="nav-main"><a href="<c:url value="/home"/>">Home</a></li>
         <li id="nav-categories"><a href="<c:url value="/home#categories"/>">Categories</a></li>
         <li id="nav-products"><a href="<c:url value="/home#all-products"/>">Products</a></li>
         <li id="nav-delivery"><a href="<c:url value="/home#delivery"/>">Delivery</a></li>
-        <li id="nav-payments"><a href="<c:url value="/home#payments"/>">Payment</a></li>
         <li id="nav-contacts"><a href="<c:url value="/home#contacts"/>">Contacts</a></li>
         <li id="nav-cart">
             <a href="<c:url value="/cart"/>">
@@ -75,7 +76,7 @@
                                        minlength="5" maxlength="50">
                             </div>
                             <div id="mor">
-                                <input class="btn-g" type="submit"  value="make order" width="203px">
+                                <input class="btn btn-success" type="submit"  value="make order" width="203px">
                             </div>
                         </form>
                     </div>
@@ -84,12 +85,12 @@
                         <div id="btn-flex">
                             <div>
                             <a href="<c:url value="/product/all"/>">
-                                <button class="btn-g"> Shopping</button>
+                                <button class="btn btn-success"> Shopping</button>
                             </a>
                             </div>
                             &nbsp;&nbsp;&nbsp;<div>
                             <a href="<c:url value="/cart/clear"/>">
-                                <button class="btn-g">Empty cart</button>
+                                <button class="btn btn-success">Empty </button>
                             </a>
                             </div>
                         </div>

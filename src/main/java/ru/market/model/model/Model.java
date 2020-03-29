@@ -27,7 +27,7 @@ public abstract class Model implements Serializable {
     /**
      * Набор вожможных для использованния символов по-умолчанию.
      */
-    private static final char[] CODE_PATTERN = "ALEXCOFFEE1234567890".toCharArray();
+    private static final char[] CODE_PATTERN = "TEAMARKET1234567890".toCharArray();
 
     /**
      * Длина возвращаемой строки по-умолчанию 6.
@@ -50,7 +50,6 @@ public abstract class Model implements Serializable {
 
     /**
      * Возвращает описание категории.
-     * Переопределенный метод родительского класса {@link Object}.
      */
     @Override
     public String toString() {
@@ -59,11 +58,6 @@ public abstract class Model implements Serializable {
 
     /**
      * Сравнивает текущий объект с объектом переданым как параметр.
-     * Переопределенный метод родительского класса {@link Object}.
-     *
-     * @param object объект для сравнения с текущим объектом.
-     * @return Значение типа boolean - результат сравнения текущего объекта
-     * с переданным объектом.
      */
     @Override
     public boolean equals(Object object) {
@@ -72,9 +66,6 @@ public abstract class Model implements Serializable {
 
     /**
      * Возвращает хеш код объекта.
-     * Переопределенный метод родительского класса {@link Object}.
-     *
-     * @return Значение типа int - уникальный номер объекта.
      */
     @Override
     public abstract int hashCode();
@@ -82,9 +73,6 @@ public abstract class Model implements Serializable {
     /**
      * Конвертирует дату типа Date в строку используя для работы входящими параметрами
      * формат даты {@value DATE_PATTERN} и часовой пояс (@value TIME_ZONE} по-умолчанию.
-     *
-     * @param date Значение даты типа Date для обработки.
-     * @return Значение типа {@link String} - дата в виде строки.
      */
     protected String dateToString(final Date date) {
         return dateToStringWithFormat(date,
@@ -96,8 +84,6 @@ public abstract class Model implements Serializable {
     /**
      * Возвращает номер версии класса необходимый для десериализации
      * и сериализации.
-     *
-     * @return Значение типа {@link Long} - значение поля serialVersionUID.
      */
     public long getId() {
         return this.id;
@@ -106,8 +92,6 @@ public abstract class Model implements Serializable {
     /**
      * Устанавливает номер версии класса необходимый
      * для десериализации и сериализации.
-     *
-     * @param id Значение параметра будет записано в поле id объекта.
      */
     public void setId(final long id) {
         this.id = id;
@@ -115,8 +99,6 @@ public abstract class Model implements Serializable {
 
     /**
      * Конвертирует входящий список возращает лист только для чтений.
-     * Если входной параметер - лист равен null или пустой,
-     * тогда метод возвращает пустой список.
      */
     public <T extends Model> List<T> getUnmodifiableList(final Collection<T> collection) {
         final List<T> result;

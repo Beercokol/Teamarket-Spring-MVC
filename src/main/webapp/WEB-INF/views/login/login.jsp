@@ -11,16 +11,16 @@
               integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
               crossorigin="anonymous">
 
-        <title>Авторизация </title>
+        <title>Authorization </title>
     </head>
     <body >
     <%@include file="/WEB-INF/views/home/navbar.jsp" %>
-    <div  class="container-fluid bg-im">
+    <div  class="container-fluid bg-im" id="login-sec">
         <section id="login" >
             <div  class="row login">
-                <div  class="col-xs-6 col-xs-offset-4 col-sm-4 col-sm-offset-4 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4 col-xl-4 col-xl-offset-4 text-center">
+                <div  class="col-xs-6 col-xs-offset-4 col-sm-4 col-sm-offset-4 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4 col-xl-4 col-xl-offset-4 text-center" id="login-row">
                     <div  class="text-shadow">
-                        <span>Authorization:</span>
+                        <span >Authorization:</span>
                     </div>
                     <c:if test="${param.error ne null}">
                         <div class="alert alert-info" role="alert">

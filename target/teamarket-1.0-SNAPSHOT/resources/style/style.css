@@ -3,7 +3,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background: rgba(0, 0, 0, 1);
+    background: rgba(0, 0, 0, 0.4);
     display: flex;
     font-size: 30px;
 }
@@ -64,7 +64,7 @@ li#nav-cart-number {
 }
 
 a:hover {
-    color: wheat;
+    color: mediumblue;
     transition: 1s;
 }
 
@@ -80,6 +80,7 @@ a:hover {
     padding-top: 300px;
     margin-top: 0px;
 }
+
 
 #logo-GB {
     margin-top: 0px;
@@ -310,7 +311,7 @@ body#body-admin-navbar {
 #cat1-flex{
     display: flex;
     text-align: center;
-    padding-left: 240px;
+    padding-left: 270px;
 }
 
 .name-logo1{
@@ -445,7 +446,7 @@ td:nth-child(2){
 .inp-flex{
     display: flex;
     width: 203px;
-    height: 220px;
+    height: 250px;
     margin: auto;
     padding-bottom: 50px;
 
@@ -459,21 +460,23 @@ td:nth-child(2){
 #table-pr{
     width: 603px;
     margin: auto;
+    padding-bottom: 30px;
 
 }
 #btn-cart{
-    width: 400px;
-    height: 150px;
+    width: auto;
+    margin: auto;
+
 }
 
 #mor{
-    margin: auto;
+    margin-left: 35px;
     width: 203px;
 
 }
 #btn-flex{
     display: flex;
-    margin-left: 770px;
+    margin-left: 850px;
 }
 
 #cart-logo1{
@@ -497,6 +500,21 @@ td:nth-child(2){
 }
 #home-page{
     z-index: 1;
+}
+.cat-list{
+    padding-top: 50px;
+    display: flex;
+    margin: auto;
+}
+#login-sec{
+    padding-top: 50px;
+    font-weight: bold;
+}
+#login-row{
+    padding-top: 100px;
+    margin: auto;
+width: 640px;
+    padding-bottom: 100px;
 }
 
 

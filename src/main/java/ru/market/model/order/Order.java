@@ -290,9 +290,6 @@ public final class Order extends Model {
         this.description = description;
     }
 
-    /**
-     * Возвращает цену заказа - общую стоимость всех торговых позиция.
-     */
     public double getPrice() {
         double price = 0;
         for (SalePosition salePosition : this.salePositions) {

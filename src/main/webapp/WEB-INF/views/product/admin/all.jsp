@@ -9,6 +9,8 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <link href="<c:url value="/resources/style/style.css"/>" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
 
         <title>Tea</title>
     </head>
@@ -25,7 +27,7 @@
                             <c:if test="${products_length eq 0}">
                                 <span> - empty!</span><br>
                                 <a href="<c:url value="/admin/product/add"/>" title="Add new product">
-                                    <button  type="submit">Add</button>
+                                    <button   class="btn btn-success" type="submit">Add</button>
                                 </a>
                             </c:if>
                         </b>
@@ -40,10 +42,10 @@
                                 <th width="35%">
                                     Action
                                     <a href="<c:url value="/admin/product/add"/>" title="Add new product">
-                                        <button  type="submit">Add</button>
+                                        <button  class="btn btn-success" type="submit">Add</button>
                                     </a>
                                     <a href="<c:url value="/admin/product/delete_all"/>" title="delete all products">
-                                        <button type="submit">Delete All</button>
+                                        <button  class="btn btn-danger" type="submit">Delete All</button>
                                     </a>
                                 </th>
                             </tr>
@@ -61,15 +63,16 @@
                                     <td>
                                         <a href="<c:url value="/admin/product/view/${product.id}"/>"
                                            title="Watch a product ${product.title}">
-                                            <button  type="submit">Watch</button>
+                                            <button сlass="btn btn-info"
+                                                    type="submit">Watch</button>
                                         </a>
                                         <a href="<c:url value="/admin/product/edit/${product.id}"/>"
                                            title="Edit product${product.title}">
-                                            <button  type="submit">Edit</button>
+                                            <button class="btn btn-success" type="submit">Edit</button>
                                         </a>
                                         <a href="<c:url value="/admin/product/delete/${product.id}"/>"
                                            title="Delete product ${product.title}">
-                                            <button type="submit">Delete</button>
+                                            <button  class="btn btn-danger" type="submit">Delete</button>
                                         </a>
                                     </td>
                                 </tr>

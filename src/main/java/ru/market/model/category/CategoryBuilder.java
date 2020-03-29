@@ -38,9 +38,6 @@ public final class CategoryBuilder extends ModelBuilder<Category, CategoryBuilde
 
     /**
      * Builds and returns a new category.
-     *
-     * @return The new category.
-     * @see Category
      */
     @Override
     public Category build() {

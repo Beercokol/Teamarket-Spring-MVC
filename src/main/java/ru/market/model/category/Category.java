@@ -48,10 +48,7 @@ public final class Category extends Model {
     /**
      * Изображение категории. Значение поля (id объекта photo) сохраняется
      * в колонке "photo_id". Между объектами классов {@link Category} и {@link Photo}
-     * связь один-к-одному, а именно каждая запись в одной таблице напрямую связана
-     * с отдельной записью в другой таблице. Выборка объекта photo до первого доступа нему,
-     * при первом доступе к текущему объекту. Сущности связаны полностью каскадным обновлением
-     * записей в базе данных.
+     * связь один-к-одному.
      */
     @OneToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinColumn(name = "photo_id", referencedColumnName = "id")
@@ -60,8 +57,6 @@ public final class Category extends Model {
     /**
      * Список товаров, которые относятся к данной категории. К текущей категории
      * можно добраться через поле "category" в объекте класса {@link Category}.
-     * Выборка объектов products при первом доступе к нему.
-     * Сущности связаны полностью каскадным обновлением записей в базе данных.
      */
     @OneToMany(
             fetch = FetchType.LAZY,
@@ -75,10 +70,6 @@ public final class Category extends Model {
 
     /**
      * Возвращает описание категории.
-     * Переопределенный метод родительского класса {@link Object}.
-     *
-     * @return Значение типа {@link String} -
-     * строка описание категории (название, URL, описание).
      */
     @Override
     public String toString() {
@@ -92,10 +83,6 @@ public final class Category extends Model {
     /**
      * Сравнивает текущий объект с объектом переданым как параметр.
      * Переопределенный метод родительского класса {@link Object}.
-     *
-     * @param object объект для сравнения с текущим объектом.
-     * @return Значение типа boolean - результат сравнения текущего объекта
-     * с переданным объектом.
      */
     @Override
     public boolean equals(Object object) {
@@ -111,8 +98,6 @@ public final class Category extends Model {
     /**
      * Возвращает хеш код объекта.
      * Переопределенный метод родительского класса {@link Object}.
-     *
-     * @return Значение типа int - уникальный номер объекта.
      */
     @Override
     public int hashCode() {
@@ -177,92 +162,44 @@ public final class Category extends Model {
     /**
      * Конвертирует список товаров products данной категории  в список только
      * для чтений и возвращает его.
-     *
-     * @return Объект типа {@link List} - список товаров только для чтения
-     * или пустой список.
      */
     public Collection<Product> getProducts() {
         return getUnmodifiableList(this.products);
     }
 
-    /**
-     * Устанавливает список товаров products, которые будут относиться к данной категории.
-     *
-     * @param products Список товаров .
-     */
     public void setProducts(final Collection<Product> products) {
         clearProducts();
         addProducts(products);
     }
 
-    /**
-     * Возвращает название категории.
-     *
-     * @return Значение типа {@link String} - название категории.
-     */
     public String getTitle() {
         return this.title;
     }
 
-    /**
-     * Устанавливает название категории.
-     *
-     * @param title Название категории.
-     */
     public void setTitle(final String title) {
         this.title = isNotEmpty(title) ? title : "";
     }
 
-    /**
-     * Возвращает URL категории.
-     *
-     * @return Значение типа {@link String} - URL категории.
-     */
     public String getUrl() {
         return this.url;
     }
 
-    /**
-     * Устанавливает URL категории.
-     *
-     * @param url URL категории.
-     */
     public void setUrl(final String url) {
         this.url = isNotEmpty(url) ? url : "";
     }
 
-    /**
-     * Возвращает описание категории.
-     *
-     * @return Значение типа {@link String} - описание категории.
-     */
     public String getDescription() {
         return this.description;
     }
 
-    /**
-     * Устанавливает описание категории.
-     *
-     * @param description Описание категории.
-     */
     public void setDescription(final String description) {
         this.description = isNotEmpty(description) ? description : "";
     }
 
-    /**
-     * Возвращает изображение категории.
-     *
-     * @return Объект класса {@link Photo} - изображение категории.
-     */
     public Photo getPhoto() {
         return this.photo;
     }
 
-    /**
-     * Устанавливает изображение категории.
-     *
-     * @param photo Изображение категории.
-     */
     public void setPhoto(final Photo photo) {
         this.photo = photo;
     }

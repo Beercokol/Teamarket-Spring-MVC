@@ -21,12 +21,11 @@
     <div id="navbar">
     <ul name="navbar-ul">
         <li id="logo-name" Golden Bug></li>
-        <li><img src="<c:url value="/resources/images/goldenBug.jpg"/>" height="95" width="95" id="shop-logo" ></li>
+        <li><img src="<c:url value="/resources/images/goldenBug.png"/>" height="95" width="95" id="shop-logo" ></li>
         <li id="nav-main"><a href="<c:url value="/home"/>">Home</a></li>
         <li id="nav-categories"><a href="<c:url value="/home#categories"/>">Categories</a></li>
         <li id="nav-products"><a href="<c:url value="/home#all-products"/>">Products</a></li>
         <li id="nav-delivery"><a href="<c:url value="/home#delivery"/>">Delivery</a></li>
-        <li id="nav-payments"><a href="<c:url value="/home#payments"/>">Payment</a></li>
         <li id="nav-contacts"><a href="<c:url value="/home#contacts"/>">Contacts</a></li>
         <li id="nav-cart">
             <a href="<c:url value="/cart"/>">

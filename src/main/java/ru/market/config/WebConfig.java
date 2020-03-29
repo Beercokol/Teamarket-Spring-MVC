@@ -55,7 +55,7 @@ public class WebConfig extends WebMvcConfigurerAdapter {
 
     /**
      * Указывает Spring'у где находятся компоненты представления, и как их отображать.
-     * Вьюшкибудут лежать в директории /WEB-INF/views/ и иметь разширение *.jsp.
+     * Вьюшки будут лежать в директории /WEB-INF/views/ и иметь разширение *.jsp.
      */
     @Bean
     public ViewResolver viewResolver() {
