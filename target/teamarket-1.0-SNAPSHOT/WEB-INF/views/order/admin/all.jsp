@@ -13,6 +13,8 @@
         <title>Orders</title>
 
         <link href="<c:url value="/resources/style/style.css"/>" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
     </head>
     <body>
     <jsp:include page="/WEB-INF/views/other/admin_navbar.jsp"/>
@@ -40,7 +42,7 @@
                                 <th>
                                     Action
                                     <a href="<c:url value="/admin/order/delete_all"/>" title="Delete all orders">
-                                        <button  type="submit">Delete ALL</button>
+                                        <button  class="btn btn-danger" type="submit">Delete ALL</button>
                                     </a>
                                 </th>
                             </tr>
@@ -59,15 +61,15 @@
                                     <td>
                                         <a href="<c:url value="/admin/order/view/${order.id}"/>"
                                            title="Watch order ${order.number}">
-                                            <button  type="submit">Watch</button>
+                                            <button class="btn btn-success" type="submit">Watch</button>
                                         </a>
                                         <a href="<c:url value="/admin/order/edit/${order.id}"/>"
                                            title="Edit order ${order.number}">
-                                            <button  type="submit">Edit</button>
+                                            <button   class="btn btn-success" type="submit">Edit</button>
                                         </a>
                                         <a href="<c:url value="/admin/order/delete/${order.id}"/>"
                                            title="Delete order ${order.number}">
-                                            <button  type="submit">Delete</button>
+                                            <button   class="btn btn-danger" type="submit">Delete</button>
                                         </a>
                                     </td>
                                 </tr>

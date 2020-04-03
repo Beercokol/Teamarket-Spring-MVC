@@ -25,7 +25,7 @@
                     <div>
                         <b>
                             <span>New</span>
-                            <span >Product</span>
+                            <span>Product</span>
                         </b>
                     </div>
                 </div>

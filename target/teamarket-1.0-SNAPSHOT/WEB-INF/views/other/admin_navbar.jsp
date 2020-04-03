@@ -16,7 +16,6 @@
             <li id="nav-main"><a href="<c:url value="/admin/product/all"/>">Products</a></li>
             <li id="nav-categories"><a href="<c:url value="/admin/category/all"/>">Category</a></li>
             <li id="nav-persons"><a href="<c:url value="/admin/user/all"/>">Employees</a></li>
-            <li id="nav-manager"><a href="<c:url value="/managers/order/all"/>">For managers</a></li>
             <li id="auth-user">
                 <a href="<c:url value="/admin/user/view/${auth_user.id}"/>">${auth_user.name}</a>
             </li>

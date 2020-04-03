@@ -45,7 +45,6 @@ public final class ManagerUsersController {
         final ModelAndView modelAndView = new ModelAndView();
         modelAndView.addObject("users", this.userService.getPersonnel());
         modelAndView.addObject("admin_role", UserRole.ADMIN);
-        modelAndView.addObject("manager_role", UserRole.MANAGER);
         modelAndView.addObject("auth_user", this.userService.getAuthenticatedUser());
         modelAndView.setViewName("user/manager/all");
         return modelAndView;
@@ -62,7 +61,6 @@ public final class ManagerUsersController {
         final ModelAndView modelAndView = new ModelAndView();
         modelAndView.addObject("user", this.userService.get(id));
         modelAndView.addObject("admin_role", UserRole.ADMIN);
-        modelAndView.addObject("manager_role", UserRole.MANAGER);
         modelAndView.addObject("auth_user", this.userService.getAuthenticatedUser());
         modelAndView.setViewName("user/manager/one");
         return modelAndView;

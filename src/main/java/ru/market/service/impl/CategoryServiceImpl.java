@@ -50,7 +50,7 @@ public class CategoryServiceImpl extends MainServiceImpl<Category> implements Ca
     }
 
     /**
-     * Удаляет категрию из базы даных, у которого совпадает поле url.
+     * Удаляет категoрию из базы даных, у которого совпадает поле url.
      */
     @Override
     @Transactional

@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="<c:url value="/resources/style/style.css"/>" rel="stylesheet">
 
-    <title>Document</title>
+    <title>Golden tea</title>
     </head>
 
 

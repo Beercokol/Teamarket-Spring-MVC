@@ -58,8 +58,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
      * Настройка правил доступа пользователей к страницам сайта. Указываем адреса ресурсов с
      * ограниченным доступом, ограничение задано по ролям. К страницам, URL которых начинается
      * на "{@value ADMIN_REQUEST_URl}", имеют доступ только пользователи с ролью - администратор.
-     * К страницам, URL которых начинается на "{@value MANAGER_REQUEST_URl}", имеют доступ
-     * администраторы и менеджера. Чтобы попасть на эти страницы, нужно пройти этам авторизации.
+     * К страницам. Чтобы попасть на эту страницы, нужно пройти этап авторизации.
      */
     @Override
     protected void configure(final HttpSecurity httpSecurity)
@@ -73,8 +72,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
             .hasRole(UserRole.ADMIN.name())
             .antMatchers(MANAGER_REQUEST_URl)
             .hasAnyRole(
-                UserRole.ADMIN.name(),
-                UserRole.MANAGER.name()
+                UserRole.ADMIN.name()
             )
             .anyRequest().permitAll()
             .and()

@@ -12,6 +12,8 @@
         <meta name="title" content="Order ${order.number}">
         <title>Заказ ${order.number} </title>
         <link href="<c:url value="/resources/style/style.css"/>" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
 
     </head>
     <body>
@@ -135,14 +137,14 @@
                             <td>
                                 <a href="<c:url value="/admin/order/edit/${order.id}"/>"
                                    title="Edit order ${order.number}">
-                                    <button  type="submit">Edit</button>
+                                    <button class="btn btn-success" type="submit">Edit</button>
                                 </a>
                                 <a href="<c:url value="/admin/order/delete/${order.id}"/>"
                                    title="Delete order ${order.number}">
-                                    <button  type="submit">Delete</button>
+                                    <button class="btn btn-danger" type="submit">Delete</button>
                                 </a>
                                 <a href="<c:url value="/admin/order/all"/>" title="Back to the list of orders">
-                                    <button  type="submit">Back</button>
+                                    <button class="btn btn-success" type="submit">Back</button>
                                 </a>
                             </td>
                         </tr>

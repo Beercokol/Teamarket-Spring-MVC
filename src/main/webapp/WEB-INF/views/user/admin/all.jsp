@@ -12,6 +12,8 @@
         <meta name="title" content="Персонал">
         <title>Персонал </title>
         <link href="<c:url value="/resources/style/style.css"/>" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
 
     </head>
     <body>
@@ -27,7 +29,7 @@
                                 <span> -is empty!</span>
                                 <br>
                                 <a href="<c:url value="/admin/user/add"/>" title="Add new employee">
-                                    <button  type="submit">Add</button>
+                                    <button class="btn btn-success" type="submit">Add</button>
                                 </a>
                             </c:if>
                         </b>
@@ -43,10 +45,10 @@
                                 <td>
                                     <b>Action</b>
                                     <a href="<c:url value="/admin/user/add"/>" title="Add new employee">
-                                        <button  type="submit">Add</button>
+                                        <button class="btn btn-success"  type="submit">Add</button>
                                     </a>
                                     <a href="<c:url value="/admin/user/delete_all"/>" title="Delete ALL managers">
-                                        <button  type="submit">Delete ALL</button>
+                                        <button class="btn btn-danger" type="submit">Delete ALL</button>
                                     </a>
                                 </td>
                             </tr>
@@ -68,15 +70,15 @@
                                     <td>
                                         <a href="<c:url value="/admin/user/view/${user.id}"/>"
                                            title="View information ${user.name}">
-                                            <button  type="submit">Watch</button>
+                                            <button class="btn-success"  type="submit">Watch</button>
                                         </a>
                                         <a href="<c:url value="/admin/user/edit/${user.id}"/>"
                                            title="Edit information about ${user.name}">
-                                            <button  type="submit">Edit</button>
+                                            <button class="btn-success"  type="submit">Edit</button>
                                         </a>
                                         <a href="<c:url value="/admin/user/delete/${user.id}"/>"
                                            title="Delete information about ${user.name}">
-                                            <button  type="submit">Delete</button>
+                                            <button  class="btn-danger" type="submit">Delete</button>
                                         </a>
                                     </td>
                                 </tr>

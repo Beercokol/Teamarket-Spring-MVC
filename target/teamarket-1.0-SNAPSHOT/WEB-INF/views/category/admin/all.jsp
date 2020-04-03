@@ -12,6 +12,8 @@
         <meta name="title" content="Categories">
         <title>Categories</title>
         <link href="<c:url value="/resources/style/style.css"/>" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
     </head>
     <body>
     <jsp:include page="/WEB-INF/views/other/admin_navbar.jsp"/>
@@ -26,7 +28,7 @@
                             <c:if test="${categories_length eq 0}">
                                 <span> - is empty!</span><br>
                                 <a href="<c:url value="/admin/category/add"/>" title="Add new category">
-                                    <button  type="submit">Add</button>
+                                    <button class="btn btn-success"  type="submit">Add</button>
                                 </a>
                             </c:if>
                         </b>
@@ -59,15 +61,15 @@
                                     <td>
                                         <a href="<c:url value="/admin/category/view/${category.id}"/>"
                                            title="Watch category ${category.title}">
-                                            <button  type="submit">Watch</button>
+                                            <button class="btn btn-success" type="submit">Watch</button>
                                         </a>
                                         <a href="<c:url value="/admin/category/edit/${category.id}"/>"
                                            title="Edit category ${category.title}">
-                                            <button type="submit">Edit</button>
+                                            <button class="btn btn-success" type="submit">Edit</button>
                                         </a>
                                         <a href="<c:url value="/admin/category/delete/${category.id}"/>"
                                            title="Delete category ${category.title}">
-                                            <button  type="submit">Delete</button>
+                                            <button class="btn btn-danger" type="submit">Delete</button>
                                         </a>
                                     </td>
                                 </tr>

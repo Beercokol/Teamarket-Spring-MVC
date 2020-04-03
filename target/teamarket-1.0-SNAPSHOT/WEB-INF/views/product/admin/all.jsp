@@ -63,7 +63,7 @@
                                     <td>
                                         <a href="<c:url value="/admin/product/view/${product.id}"/>"
                                            title="Watch a product ${product.title}">
-                                            <button сlass="btn btn-info"
+                                            <button сlass="btn btn-success"
                                                     type="submit">Watch</button>
                                         </a>
                                         <a href="<c:url value="/admin/product/edit/${product.id}"/>"

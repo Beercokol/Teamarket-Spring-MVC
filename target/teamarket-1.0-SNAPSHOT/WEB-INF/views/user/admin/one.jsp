@@ -11,6 +11,8 @@
         <meta name="title" content="${user.name} | ${user.role.description} ">
         <title>${user.name} | ${user.role.description} </title>
         <link href="<c:url value="/resources/style/style.css"/>" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
 
 
     </head>
@@ -98,14 +100,14 @@
                             <td>
                                 <a href="<c:url value="/admin/user/edit/${user.id}"/>"
                                    title="Edit info about ${user.username}">
-                                    <button  type="submit">Edit</button>
+                                    <button class="btn btn-success" type="submit">Edit</button>
                                 </a>
                                 <a href="<c:url value="/admin/user/delete/${user.id}"/>"
                                    title="Delete information about ${user.username}">
-                                    <button  type="submit">Delete</button>
+                                    <button class="btn btn-danger" type="submit">Delete</button>
                                 </a>
                                 <a href="<c:url value="/admin/user/all"/>" title="Back to user list">
-                                    <button  type="submit">Back</button>
+                                    <button class="btn btn-success" type="submit">Back</button>
                                 </a>
                             </td>
                         </tr>

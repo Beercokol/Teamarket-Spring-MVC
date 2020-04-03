@@ -6,17 +6,18 @@
 <html lang="ru">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-
-    <title>Checkout </title>
+    <link href="<c:url value="/resources/style/style.css"/>" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Checkout</title>
 
 </head>
 <body>
 <jsp:include page="/WEB-INF/views/home/navbar.jsp"/>
-<div >
+<div class="bg-im">
     <section >
         <div >
             <div>
-                <div>
+                <div id="centr-b">
                     <b>${order.client.name}</b>, Thanks for your order!<br><br>
                     A sales manager will contact you within an hour!<br><br>
                     Order number: <b>${order.number}</b><br><br>
@@ -28,7 +29,9 @@
             </div>
             <jsp:include page="/WEB-INF/views/product/in_cart.jsp"/>
         </div>
+
     </section>
 </div>
+<jsp:include page="/WEB-INF/views/home/end.jsp"/>
 </body>
 </html>

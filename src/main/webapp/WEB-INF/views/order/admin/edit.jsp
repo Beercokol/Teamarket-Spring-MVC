@@ -12,6 +12,8 @@
         <meta name="title" content="Order editing ${order.number} ">
         <title>Order editing ${order.number} </title>
         <link href="<c:url value="/resources/style/style.css"/>" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
 
     </head>
     <body>
@@ -120,10 +122,10 @@
                             <tr>
                                 <th></th>
                                 <td>
-                                    <button  type="submit"
+                                    <button  class="btn btn-success" type="submit"
                                             title="Update Order Information">Save
                                     </button>
-                                    <button type="reset"
+                                    <button class="btn btn-danger" type="reset"
                                             title="Reset Entered Data">Reset
                                     </button>
                                 </td>

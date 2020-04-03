@@ -13,7 +13,7 @@ public interface CategoryService extends MainService<Category> {
     Category get(String url);
 
     /**
-     * Удаляет категрию, у которого совпадает поле url.
+     * Удаляет категoрию, у которого совпадает поле url.
      */
     void remove(String url);
 }

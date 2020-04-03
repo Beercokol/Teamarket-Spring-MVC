@@ -39,10 +39,6 @@ public  class UserServiceImpl extends MainServiceImpl<User> implements UserServi
      */
     private final static Long ADMIN_ROLE_ID = 2L;
 
-    /**
-     * ID роли менеджера в базе данных.
-     */
-    private final static Long MANAGER_ROLE_ID = 3L;
 
     /**
      * Реализация интерфейса {@link UserRepository}
@@ -145,18 +141,6 @@ public  class UserServiceImpl extends MainServiceImpl<User> implements UserServi
     }
 
     /**
-     * Возвращает список всех менеджеров сайта.
-     * Режим только для чтения.
-     *
-     * @return Объект типа {@link List} - список менеджеров.
-     */
-    @Override
-    @Transactional(readOnly = true)
-    public Collection<User> getManagers() {
-        return this.repository.findAllByRole(UserRole.MANAGER);
-    }
-
-    /**
      * Возвращает список всех клиентов сайта.
      * Режим только для чтения.
      *
@@ -180,7 +164,6 @@ public  class UserServiceImpl extends MainServiceImpl<User> implements UserServi
     public Collection<User> getPersonnel() {
         final List<User> users = new ArrayList<>();
         users.addAll(getAdministrators());
-        users.addAll(getManagers());
         return users;
     }
 

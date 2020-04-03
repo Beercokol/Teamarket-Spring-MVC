@@ -79,7 +79,6 @@ public final class ManagerOrdersController {
         modelAndView.addObject("order_price", order.getPrice());
         modelAndView.addObject("status_new", OrderStatus.NEW);
         modelAndView.addObject("auth_user", this.userService.getAuthenticatedUser());
-        modelAndView.addObject("manager_role", UserRole.MANAGER);
         modelAndView.addObject("admin_role", UserRole.ADMIN);
         modelAndView.setViewName("order/manager/one");
         return modelAndView;

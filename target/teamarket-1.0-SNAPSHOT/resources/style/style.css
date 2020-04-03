@@ -513,9 +513,18 @@ td:nth-child(2){
 #login-row{
     padding-top: 100px;
     margin: auto;
-width: 640px;
+    width: 640px;
     padding-bottom: 100px;
 }
+#centr-b{
+    margin: auto;
+    padding-top: 100px;
+    width: 350px;
+    padding-bottom: 50px;
+
+}
+
+
 
 
 

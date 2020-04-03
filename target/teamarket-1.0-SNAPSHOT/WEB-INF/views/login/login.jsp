@@ -23,7 +23,7 @@
                         <span >Authorization:</span>
                     </div>
                     <c:if test="${param.error ne null}">
-                        <div class="alert alert-info" role="alert">
+                        <div class="alert alert-danger" role="alert">
                             Authorization error!
                         </div>
                     </c:if>
