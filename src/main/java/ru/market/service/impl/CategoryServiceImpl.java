@@ -26,6 +26,7 @@ public class CategoryServiceImpl extends MainServiceImpl<Category> implements Ca
      * автоматически инициализировать объект.
      */
     @Autowired
+    //т.к. бин существует
     @SuppressWarnings("SpringJavaAutowiringInspection")
     public CategoryServiceImpl(final CategoryRepository repository) {
         super(repository);

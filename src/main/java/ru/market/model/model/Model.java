@@ -20,17 +20,17 @@ import static ru.market.util.validator.ObjectValidator.isNotNull;
 @MappedSuperclass
 public abstract class Model implements Serializable {
     /**
-     * Номер версии класса необходимый для десериализации и сериализации.
+     * The class version number required for deserialization and serialization.
      */
     private static final long serialVersionUID = 1L;
 
     /**
-     * Набор вожможных для использованния символов по-умолчанию.
+     * Set of default characters for use.
      */
     private static final char[] CODE_PATTERN = "TEAMARKET1234567890".toCharArray();
 
     /**
-     * Длина возвращаемой строки по-умолчанию 6.
+     * The default length of the returned string is 6.
      */
     private static final int CODE_LENGTH = 6;
 
@@ -48,31 +48,23 @@ public abstract class Model implements Serializable {
     protected Model() {
     }
 
-    /**
-     * Возвращает описание категории.
-     */
+
     @Override
     public String toString() {
         return "Model{id=" + this.id + '}';
     }
 
-    /**
-     * Сравнивает текущий объект с объектом переданым как параметр.
-     */
     @Override
     public boolean equals(Object object) {
         return isNotNull(object) && (super.equals(object) || (getClass() == object.getClass()));
     }
 
-    /**
-     * Возвращает хеш код объекта.
-     */
     @Override
     public abstract int hashCode();
 
     /**
-     * Конвертирует дату типа Date в строку используя для работы входящими параметрами
-     * формат даты {@value DATE_PATTERN} и часовой пояс (@value TIME_ZONE} по-умолчанию.
+     * Converts a date of type Date to a string using input parameters to work
+     * date format {@value DATE_PATTERN} and time zone (@value TIME_ZONE} by default.
      */
     protected String dateToString(final Date date) {
         return dateToStringWithFormat(date,
@@ -81,24 +73,18 @@ public abstract class Model implements Serializable {
         );
     }
 
-    /**
-     * Возвращает номер версии класса необходимый для десериализации
-     * и сериализации.
-     */
+
     public long getId() {
         return this.id;
     }
 
-    /**
-     * Устанавливает номер версии класса необходимый
-     * для десериализации и сериализации.
-     */
     public void setId(final long id) {
         this.id = id;
     }
 
     /**
-     * Конвертирует входящий список возращает лист только для чтений.
+     * Converts an inbound list;
+     * returns a read-only list.
      */
     public <T extends Model> List<T> getUnmodifiableList(final Collection<T> collection) {
         final List<T> result;
@@ -111,8 +97,8 @@ public abstract class Model implements Serializable {
     }
 
     /**
-     * Конвертирует дату типа Date в строку используя для работы входящими
-     * параметрами формат даты и часовой пояс.
+     * Converts a date of type Date
+     * Option for date format and time zone.
      */
     private static String dateToStringWithFormat(
             final Date date,

@@ -102,13 +102,6 @@ public  class ProductServiceImpl extends MainServiceImpl<Product> implements Pro
      * Возвращает список рандомных товаров, которые относятся к категории
      * с уникальным кодом id - входным параметром.
      * Режим только для чтения.
-     *
-     * @param size               Количество товаров в списке.
-     * @param categoryId         Код категории, товары которой будут возвращены.
-     * @param differentProductId Код товара, который точно не будет включен в список.
-     * @return Объект типа {@link List} - список товаров.
-     * @throws IllegalArgumentException Бросает исключение,
-     *                                  если несли пустой хотя бы одис с параметров.
      */
     @Override
     @Transactional(readOnly = true)

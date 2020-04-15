@@ -21,7 +21,7 @@
         <section id="product">
             <div >
                 <div>
-                    <div>
+                    <div  class="centre-span">
                         <b>
                             <span>Edit product </span>
                             <span>"${product.title}"</span>

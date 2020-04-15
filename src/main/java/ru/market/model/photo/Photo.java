@@ -17,30 +17,30 @@ import static ru.market.util.validator.ObjectValidator.*;
 @Table(name = "photos")
 public final class Photo extends Model {
     /**
-     * Номер версии класса необходимый для десериализации и сериализации.
+     * The class version number required for deserialization and serialization.
      */
     private static final long serialVersionUID = 1L;
 
     /**
-     * Путь к папке с изображениями в файловой системе.
+     * The path to the image folder in the file system.
      */
     public static final String PATH = System.getenv("CATALINA_HOME") +
-            "/webapp/ROOT/resources/image/";
+            "/webapp/ROOT/resources/images/";
 
     /**
-     * Название изображения.
+     *The name of the image.
      */
     @Column(name = "title", nullable = false)
     private String title = "";
 
     /**
-     * Строка-ссылка на малое изображения.
+     * A link  to a small image.
      */
     @Column(name = "photo_link_short")
     private String smallUrl = "";
 
     /**
-     * Строка-ссылка на большое изображения.
+     * A link  to a big image.
      */
     @Column(name = "photo_link_long")
     private String longUrl = "";
@@ -48,9 +48,7 @@ public final class Photo extends Model {
     protected Photo() {
     }
 
-    /**
-     * Возвращает описание изображения.
-     */
+
     @Override
     public String toString() {
         return "Photo{" + super.toString() +
@@ -60,9 +58,7 @@ public final class Photo extends Model {
                 '}';
     }
 
-    /**
-     * Сравнивает текущий объект с объектом переданым как параметр.
-     */
+
     @Override
     public boolean equals(Object object) {
         boolean result = super.equals(object);
@@ -75,9 +71,7 @@ public final class Photo extends Model {
         return result;
     }
 
-    /**
-     * Возвращает хеш код объекта.
-     */
+
     @Override
     public int hashCode() {
         int result = this.title.hashCode();

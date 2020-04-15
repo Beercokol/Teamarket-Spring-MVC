@@ -24,15 +24,12 @@ import java.util.List;
 )
 public class ShoppingCart implements Serializable {
     /**
-     *  Используется для указании версии сериализованных данных.
+     * The class version number required for deserialization and serialization.
      */
     private static final long serialVersionUID = 1L;
 
     private  final List<SalePosition> salePositions = new ArrayList<>();
 
-    /**
-     * Возвращает описание корзины.
-     */
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("Shopping Cart: ");
@@ -58,7 +55,7 @@ public class ShoppingCart implements Serializable {
     }
 
     /**
-     * Добавляет торговую позицию в список корзины.
+     * Adds a trading position to the basket list.
      */
     public void addSalePosition(final SalePosition position) {
         if (isNotNull(position)) {
@@ -72,7 +69,7 @@ public class ShoppingCart implements Serializable {
     }
 
     /**
-     * Добавляет список торговых позиций в список корзины.
+     * Adds a list of sales items to the basket list.
      */
     public void addSalePositions(final Collection<SalePosition> positions) {
         if (isNotEmpty(positions)) {
@@ -81,7 +78,7 @@ public class ShoppingCart implements Serializable {
     }
 
     /**
-     * Удаляет торговую позицию из корзины.
+     * Removes a trade item from the basket.
      */
     public void removeSalePosition(final SalePosition position) {
         if (isNotNull(position)) {
@@ -90,9 +87,7 @@ public class ShoppingCart implements Serializable {
     }
 
     /**
-     * Удаляет список торговых позицый из корзины.
-     *
-     * @param positions Торговые позиции для удаления из корзины.
+     * Deletes a shopping list item from the basket.
      */
     public void removeSalePositions(final Collection<SalePosition> positions) {
         if (isNotEmpty(positions)) {
@@ -101,17 +96,16 @@ public class ShoppingCart implements Serializable {
     }
 
     /**
-     * Очищает корзину.
-     * Удаляет все торговые позиции в корзине.
+     * Clears the basket.
      */
     public void clearSalePositions() {
         this.salePositions.clear();
     }
 
     /**
-     * Возвращает список всех торговых позиций в корзине.
-     * Метод конвертирует список торговых позиций
-     * в корзине в список только для чтений и возвращает его.
+     * Returns a list of all trading positions in the basket.
+     * The method converts a list of trading positions
+     * The basket is in the read-only list and returns it.
      */
     public Collection<SalePosition> getSalePositions() {
         final Collection<SalePosition> positions;
@@ -124,7 +118,7 @@ public class ShoppingCart implements Serializable {
     }
 
     /**
-     * Устанавливает список торговых позиций.
+     * Sets the list of sales items.
      */
     public void setSalePositions(final Collection<SalePosition> positions) {
         clearSalePositions();
@@ -132,7 +126,7 @@ public class ShoppingCart implements Serializable {
     }
 
     /**
-     * Возвращает цену корзины - цена всех торговых позиций.
+     * Returns the price of the basket - the price of all trading positions.
      */
     public double getPrice() {
         double price = 0;
@@ -143,7 +137,7 @@ public class ShoppingCart implements Serializable {
     }
 
     /**
-     * Возвращает размер корзины - количество товаров в корзине.
+     * Returns the size of the basket - the number of products in the basket.
      */
     public int getSize() {
         int size = 0;

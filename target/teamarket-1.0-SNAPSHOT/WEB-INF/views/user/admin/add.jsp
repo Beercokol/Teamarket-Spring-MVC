@@ -21,7 +21,7 @@
         <section id="user">
             <div>
                 <div >
-                    <div>
+                    <div  class="centre-span">
                         <b><span>New </span><span>employee</span></b>
                     </div>
                 </div>

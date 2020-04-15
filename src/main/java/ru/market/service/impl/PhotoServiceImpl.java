@@ -33,9 +33,6 @@ public    class PhotoServiceImpl extends MainServiceImpl<Photo> implements Photo
      * Конструктор для инициализации основных переменных сервиса.
      * Помечаный аннотацией @Autowired, которая позволит Spring
      * автоматически инициализировать объект.
-     *
-     * @param repository Реализация интерфейса {@link PhotoRepository}
-     *                   для работы изображений с базой данных.
      */
     @Autowired
     @SuppressWarnings("SpringJavaAutowiringInspection")
@@ -48,13 +45,6 @@ public    class PhotoServiceImpl extends MainServiceImpl<Photo> implements Photo
      * Возвращает объект-изображение из базы даных, у которого совпадает
      * уникальное название с значением входящего параметра.
      * Режим только для чтения.
-     *
-     * @param title Название объекта-изображения для возврата.
-     * @return Объект класса {@link Photo} - объекта-изображение.
-     * @throws IllegalArgumentException Бросает исключение,
-     *                                  если пустой входной параметр title.
-     * @throws NullPointerException     Бросает исключение,
-     *                                  если не найден объект-изображеие с входящим параметром title.
      */
     @Override
     @Transactional(readOnly = true)
@@ -72,8 +62,6 @@ public    class PhotoServiceImpl extends MainServiceImpl<Photo> implements Photo
     /**
      * Удаляет объект-изображение из базы даных, у которого совпадает
      * уникальное название с значением входящего параметра.
-     *
-     * @param title Название объекта-изображения для удаления.
      */
     @Override
     @Transactional
@@ -85,8 +73,6 @@ public    class PhotoServiceImpl extends MainServiceImpl<Photo> implements Photo
 
     /**
      * Сохраняет файл в файловой системе.
-     *
-     * @param photo Файл для сохранения.
      */
     @Override
     @Transactional
@@ -103,8 +89,6 @@ public    class PhotoServiceImpl extends MainServiceImpl<Photo> implements Photo
 
     /**
      * Удаляет файл по url.
-     *
-     * @param url URL файла для удаления.
      */
     @Override
     @Transactional

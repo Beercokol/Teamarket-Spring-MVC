@@ -22,7 +22,7 @@
         <section id="order">
             <div >
                 <div>
-                    <div>
+                    <div  class="centre-span">
                         <b><span>Order </span><span>${order.number}</span></b>
                     </div>
                 </div>

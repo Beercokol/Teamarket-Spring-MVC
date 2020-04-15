@@ -28,11 +28,6 @@ import java.util.Date;
  * и соответствующим страницам могут обращатсья пользователи, имеющие роль-админстратор.
  * Аннотация @Controller служит для сообщения Spring'у о том, что данный класс является
  * bean'ом и его необходимо подгрузить при старте приложения.
- * Аннотацией @RequestMapping(value = "/admin/order") сообщаем, что данный контроллер будет
- * обрабатывать запросы, URI которых начинается с "/admin/order".
- * Методы класса работают с объектом, возвращенным handleRequest методом, является
- * типом {@link ModelAndView}, который агрегирует все параметры модели и имя отображения.
- * Этот тип представляет Model и View в MVC шаблоне.
  */
 @Controller
 @RequestMapping(value = "/admin/order")
@@ -81,9 +76,6 @@ public final class AdminOrdersController {
     /**
      * Возвращает заказ с уникальным кодом id на страницу "admin/order/one".
      * URL запроса "/admin/order/view/{id}", метод GET.
-     *
-     * @param id           Код заказа, который нужно вернуть.
-     * @return Объект класса {@link ModelAndView}.
      */
     @RequestMapping(
             value = "/view/{id}",
@@ -106,9 +98,6 @@ public final class AdminOrdersController {
      * Возвращает страницу "admin/order/edit" для редактирование заказа
      * с уникальным кодом, который совпадает с параметром id.
      * URL запроса "/admin/order/edit/{id}", метод GET.
-     *
-     * @param id           Код заказа, который нужно отредактировать.
-     * @return Объект класса {@link ModelAndView}.
      */
     @RequestMapping(
             value = "/edit/{id}",
@@ -129,18 +118,6 @@ public final class AdminOrdersController {
     /**
      * Обновляет заказ по входящим параметрам и перенаправляет по запросу "/admin/order/view/{id}".
      * URL запроса "/admin/order/update", метод POST.
-     *
-     * @param id           Код заказа для обновления.
-     * @param managerId    Код менеджера или администратора, который обработал заказ в последний раз.
-     * @param number       Номер заказа.
-     * @param statusName   Код статуса выполнения заказа.
-     * @param name         Имя клиента, оформивший заказ.
-     * @param email        Электронная почта клиента.
-     * @param phone        Номер телефона клиента.
-     * @param address      Адрес доставки товаров заказа.
-     * @param details      Детали доставки заказа.
-     * @param description  Описание заказа.
-     * @return Объект класса {@link ModelAndView}.
      */
     @RequestMapping(
             value = "/update",
@@ -202,9 +179,6 @@ public final class AdminOrdersController {
      * Удаляет заказ с уникальным кодом, который совпадает с входящим параметром id,
      * и перенаправляет по запросу "/admin/order/all".
      * URL запроса "/admin/order/delete/{id}", метод GET.
-     *
-     * @param id           Код заказа, которою нужно удалить.
-     * @return Объект класса {@link ModelAndView}.
      */
     @RequestMapping(
             value = "/delete/{id}",
@@ -218,8 +192,6 @@ public final class AdminOrdersController {
     /**
      * Удаляет все заказы и перенаправляет по запросу "/admin/order/all".
      * URL запроса "/admin/order/delete_all", метод GET.
-     *
-     * @return Объект класса {@link ModelAndView}.
      */
     @RequestMapping(
             value = "/delete_all",

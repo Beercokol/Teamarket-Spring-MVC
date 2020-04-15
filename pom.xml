@@ -221,13 +221,6 @@
             <version>2.7.3</version>
         </dependency>
 
-        <!-- MAIL -->
-        <dependency>
-            <groupId>javax.mail</groupId>
-            <artifactId>mail</artifactId>
-            <version>1.5.0-b01</version>
-        </dependency>
-
         <!-- MultipartResolver -->
         <dependency>
             <groupId>commons-fileupload</groupId>
@@ -249,30 +242,6 @@
             <version>3.5</version>
         </dependency>
 
-        <!-- FOR TESTS -->
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.12</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-test</artifactId>
-            <version>4.2.6.RELEASE</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.mockito</groupId>
-            <artifactId>mockito-all</artifactId>
-            <version>2.0.2-beta</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>javax.el</groupId>
-            <artifactId>javax.el-api</artifactId>
-            <version>3.0.1-b04</version>
-            <scope>test</scope>
-        </dependency>
+
     </dependencies>
 </project>

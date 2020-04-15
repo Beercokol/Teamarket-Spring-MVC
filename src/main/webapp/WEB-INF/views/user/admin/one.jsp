@@ -21,7 +21,7 @@
     <div >
         <section id="product">
             <div >
-                <div >
+                <div  class="centre-span">
                     <div ><b><span>${user.name}</span></b></div>
                 </div>
                 <div>

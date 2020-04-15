@@ -416,6 +416,7 @@ th:first-child {
 th:last-child {
     border-right: none;
 }
+
 td {
     vertical-align: middle;
     padding: 10px;
@@ -521,6 +522,19 @@ td:nth-child(2){
     padding-top: 100px;
     width: 350px;
     padding-bottom: 50px;
+
+}
+table{
+    margin: auto;
+}
+.centre-span{
+  margin: auto;
+    margin-bottom: 50px;
+    width: 200px;
+    font-size: 17px;
+}
+.id-input{
+   display: none;
 
 }
 

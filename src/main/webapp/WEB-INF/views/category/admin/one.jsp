@@ -21,7 +21,7 @@
         <section id="category">
             <div >
                 <div>
-                    <div>
+                    <div  class="centre-span">
                         <b>
                             <span>Category</span>
                             <span>"${category.title}"</span>

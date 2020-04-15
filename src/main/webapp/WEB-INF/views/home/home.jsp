@@ -9,9 +9,16 @@
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="<c:url value="/resources/style/animate.css"/>" rel="stylesheet">
         <link href="<c:url value="/resources/style/style.css"/>" rel="stylesheet">
+        <script type="text/javascript"  >
+            <%@include file="/resources/js/wow.js"%>
+        </script>
+        <script  >
+            new WOW().init();
+        </script>
 
-    <title>Golden tea</title>
+        <title>Golden tea</title>
     </head>
 
 
@@ -43,9 +50,9 @@
     </div>
     </div>
     </section>
-    <div class="sec-home" id="logo">
-    <h1 id="GB-name">Golgen Bug</h1><br>
-    <h2 id="logo-GB">Good tea - good day</h2>
+    <div class="sec-home " id="logo">
+    <h1 id="GB-name"  class="wow slideInRight ">Golgen Bug</h1><br>
+    <h2 id="logo-GB" class="wow slideInRight ">Good tea - good day</h2>
     </div>
     <div id="cat-full">
         <section id="categories" class="sec-home bg-im"  >
@@ -94,25 +101,25 @@
 
    </section>
     </section>
-    <section id="delivery-section">
+    <section id="delivery-section" >
     <div id="delivery-name">
     <h1 class="sec-home">Delivery Service:</h1>
     </div>
     <div id="delivery-cases">
-    <div id="delivery-case-1">
+    <div id="delivery-case-1" class="wow slideInLeft">
     <img src="<c:url value="/resources/images/taxi1.png"/>" height="200" width="200">
     <div id="dev-text-1">
     <h4>Courier delivery</h4>
     <h4>in Voronezh</h4>
     </div>
     </div>
-    <div id="delivery-case-2">
+    <div id="delivery-case-2" class="wow slideInLeft">
     <img src="<c:url value="/resources/images/delivery-truck1.png"/>" height="200" width="200">
     <div id="dev-text-2">
     <h4>Mail delivery</h4>
     </div>
     </div>
-    <div id="delivery-case-3">
+    <div id="delivery-case-3" class="wow slideInLeft">
     <img src="<c:url value="/resources/images/supermarket-cart-silhouette1.png"/>" height="200" width="200">
     <div id="dev-text-3">
     <h4>Pickup delivery</h4>
@@ -145,7 +152,10 @@
             <h2 class="no-margin">Golden Bug</h2><br>
             <h3 id="h3-end-page">Good tea - good  day</h3>
         </div>
+
     </section>
+
+
     </body>
 
 

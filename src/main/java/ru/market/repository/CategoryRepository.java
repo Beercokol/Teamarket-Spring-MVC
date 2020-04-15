@@ -12,7 +12,7 @@ public interface CategoryRepository extends MainRepository<Category> {
      */
     Category findByUrl(String url);
     /**
-     * Удаляет категрию из базы даных, у которой совпадает поле url.
+     * Удаляет категорию из базы даных, у которой совпадает поле url.
      */
     void deleteByUrl(String url);
 }

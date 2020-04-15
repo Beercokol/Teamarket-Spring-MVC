@@ -8,8 +8,10 @@
     <html lang="ru">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+              integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+              crossorigin="anonymous">
         <link href="<c:url value="/resources/style/style.css"/>" rel="stylesheet">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
 
         <title>Tea</title>
@@ -21,7 +23,7 @@
             <div>
                 <c:set var="products_length" value="${fn:length(products)}"/>
                 <div>
-                    <div>
+                    <div  class="centre-span">
                         <b>
                             <span >Products</span>
                             <c:if test="${products_length eq 0}">
@@ -63,8 +65,7 @@
                                     <td>
                                         <a href="<c:url value="/admin/product/view/${product.id}"/>"
                                            title="Watch a product ${product.title}">
-                                            <button сlass="btn btn-success"
-                                                    type="submit">Watch</button>
+                                            <button class="btn btn-info" type="submit">Watch</button>
                                         </a>
                                         <a href="<c:url value="/admin/product/edit/${product.id}"/>"
                                            title="Edit product${product.title}">

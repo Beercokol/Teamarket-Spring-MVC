@@ -19,7 +19,7 @@ import java.util.List;
 @Table(name = "users")
 public final class User extends Model implements UserDetails {
     /**
-     * Номер версии класса необходимый для десериализации и сериализации.
+     * The class version number required for deserialization and serialization.
      */
     private static final long serialVersionUID = 1L;
 
@@ -61,7 +61,7 @@ public final class User extends Model implements UserDetails {
     private UserRole role = UserRole.CLIENT;
 
     /**
-     * Список заказов, которые сделал текущий клиент.
+     * List of orders made by the current customer.
      */
     @OneToMany(
             fetch = FetchType.LAZY,
@@ -71,7 +71,7 @@ public final class User extends Model implements UserDetails {
     private Collection<Order> clientOrders = new ArrayList<>();
 
     /**
-     * Список заказов, которые обработал текущий менеджер.
+     * List of orders processed by the current manager.
      */
     @OneToMany(
             fetch = FetchType.LAZY,
@@ -83,9 +83,7 @@ public final class User extends Model implements UserDetails {
     protected User() {
     }
 
-    /**
-     * Возвращает описание пользователя.
-     */
+
     @Override
     public String toString() {
         return "Name: " + this.name
@@ -94,9 +92,6 @@ public final class User extends Model implements UserDetails {
                 + "\nPhone: " + this.phone;
     }
 
-    /**
-     * Сравнивает текущий объект с объектом переданым как параметр.
-     */
     @Override
     public boolean equals(Object object) {
         boolean result = super.equals(object);
@@ -122,7 +117,7 @@ public final class User extends Model implements UserDetails {
     }
 
     /**
-     * Возвращает значение типа boolean в зависемости от срока действия аккаунта.
+     * Returns a value of type boolean depending on the duration of the account.
      */
     @Override
     public boolean isAccountNonExpired() {
@@ -130,8 +125,8 @@ public final class User extends Model implements UserDetails {
     }
 
     /**
-     * Возвращает значение типа boolean от того,
-     * заблокирован текущий аккаунт (пользователь) или нет.
+     *Returns a boolean value from whether
+     * the current account (user) is blocked or not.
      */
     @Override
     public boolean isAccountNonLocked() {
@@ -139,8 +134,8 @@ public final class User extends Model implements UserDetails {
     }
 
     /**
-     * Возвращает значение типа boolean от того, активны ли права (полномичия)
-     * данного аккаунта или нет.
+     *Returns a value of type boolean on whether rights are active (full authority)
+     * this account or not.
      */
     @Override
     public boolean isCredentialsNonExpired() {
@@ -148,8 +143,8 @@ public final class User extends Model implements UserDetails {
     }
 
     /**
-     * Возвращает значение типа boolean от того,
-     * активный ли текущий аккаунт или нет.
+     * Returns a boolean value from whether
+     * whether the current account is active or not.
      */
     @Override
     public boolean isEnabled() {
@@ -157,8 +152,8 @@ public final class User extends Model implements UserDetails {
     }
 
     /**
-     * Возвращает список всех ролей пользователя через объект-обертку
-     * класса SimpleGrantedAuthority.
+     * Returns a list of all user roles through a wrapper object
+     * class SimpleGrantedAuthority.
      */
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {

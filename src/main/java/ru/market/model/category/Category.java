@@ -20,43 +20,43 @@ import static ru.market.util.validator.ObjectValidator.*;
 @Table(name = "categories")
 public final class Category extends Model {
     /**
-     * Номер версии класса необходимый для десериализации и сериализации.
+     * The class version number required for deserialization and serialization.
      */
     private static final long serialVersionUID = 1L;
 
     /**
-     * Название категории. Значение поля сохраняется
-     * в колонке "title". Не может быть null.
+     * Name of category. Field value is saved
+     * in the "title" column. It cannot be null.
      */
     @Column(name = "title", nullable = false)
     private String title = "";
 
     /**
-     * URL категории. Значение поля сохраняется
-     * в колонке "url". Не может быть null.
+     * Category URL Field value is saved
+     * in the url column. It cannot be null.
      */
     @Column(name = "url", nullable = false)
     private String url = "";
 
     /**
-     * Описание категории.
-     * Значение поля сохраняется в колонке "description".
+     * Description of the category.
+     * The field value is stored in the "description" column.
      */
     @Column(name = "description")
     private String description = "";
 
     /**
-     * Изображение категории. Значение поля (id объекта photo) сохраняется
-     * в колонке "photo_id". Между объектами классов {@link Category} и {@link Photo}
-     * связь один-к-одному.
+     *Image category. Field value (id of photo object) is saved
+     * in the column "photo_id". Between Class Objects {@link Category} and {@link Photo}
+     * one-to-one communication.
      */
     @OneToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinColumn(name = "photo_id", referencedColumnName = "id")
     private Photo photo;
 
     /**
-     * Список товаров, которые относятся к данной категории. К текущей категории
-     * можно добраться через поле "category" в объекте класса {@link Category}.
+     * List of products that belong to this category. To current category
+     * can be accessed via the "category" field in the class object {@link Category}.
      */
     @OneToMany(
             fetch = FetchType.LAZY,
@@ -68,9 +68,6 @@ public final class Category extends Model {
     protected Category() {
     }
 
-    /**
-     * Возвращает описание категории.
-     */
     @Override
     public String toString() {
         return "Category{" + super.toString() +
@@ -80,10 +77,7 @@ public final class Category extends Model {
                 '}';
     }
 
-    /**
-     * Сравнивает текущий объект с объектом переданым как параметр.
-     * Переопределенный метод родительского класса {@link Object}.
-     */
+
     @Override
     public boolean equals(Object object) {
         boolean result = super.equals(object);
@@ -95,10 +89,6 @@ public final class Category extends Model {
         return result;
     }
 
-    /**
-     * Возвращает хеш код объекта.
-     * Переопределенный метод родительского класса {@link Object}.
-     */
     @Override
     public int hashCode() {
         int result = this.title.hashCode();
@@ -108,9 +98,9 @@ public final class Category extends Model {
     }
 
     /**
-     * Добавляет товар в список текущей категории.
+     * Adds a product to the list of the current category.
      *
-     * @param product Товар, который будет добавлен в текущую категорию.
+     * @param product Product to be added to the current category.
      */
     public void addProduct(final Product product) {
         if (isNotNull(product)) {
@@ -119,10 +109,10 @@ public final class Category extends Model {
     }
 
     /**
-     * Добавляет список товаров в список текущей категории.
-     *
-     * @param products Список товаров, которые будут добавлены
-     *                 в текущую категорию.
+     *Adds a list of products to the list of the current category.
+     *    
+     *  @param products List of products to be added
+     * to the current category.
      */
     public void addProducts(final Collection<Product> products) {
         if (isNotEmpty(products)) {
@@ -131,9 +121,9 @@ public final class Category extends Model {
     }
 
     /**
-     * Удаляет товар из списка текущей категории.
-     *
-     * @param product Товар, который будет удален из данной категории.
+     *Removes a product from the list of the current category.
+     *  
+     * @param product Product to be removed from this category.
      */
     public void removeProduct(final Product product) {
         if (isNotNull(product)) {
@@ -142,9 +132,9 @@ public final class Category extends Model {
     }
 
     /**
-     * Удаляет список товаров из списка текущей категории.
-     *
-     * @param products Список товаров, которые будут удалены из текущей категории.
+     * Deletes the list of products from the list of the current category.
+     *  
+     *  @param products List of products that will be removed from the current category.
      */
     public void removeProducts(final Collection<Product> products) {
         if (isNotEmpty(products)) {
@@ -153,15 +143,15 @@ public final class Category extends Model {
     }
 
     /**
-     * Очищает список товаров products.
+     * Clears the product list .
      */
     public void clearProducts() {
         this.products.clear();
     }
 
     /**
-     * Конвертирует список товаров products данной категории  в список только
-     * для чтений и возвращает его.
+     * Converts a list of products of this category to a list only
+     * for readings and returns it.
      */
     public Collection<Product> getProducts() {
         return getUnmodifiableList(this.products);

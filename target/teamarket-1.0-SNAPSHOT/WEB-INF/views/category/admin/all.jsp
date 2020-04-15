@@ -22,7 +22,7 @@
             <div>
                 <c:set var="categories_length" value="${fn:length(categories)}"/>
                 <div>
-                    <div>
+                    <div  class="centre-span">
                         <b>
                             <span>Categories</span>
                             <c:if test="${categories_length eq 0}">
@@ -43,11 +43,11 @@
                                 <th>
                                     Action
                                     <a href="<c:url value="/admin/category/add"/>" title="Add new category">
-                                        <button  type="submit">Add</button>
+                                        <button class="btn btn-success"  type="submit">Add</button>
                                     </a>
                                     <a href="<c:url value="/admin/category/delete_all"/>"
                                        title="Delete all categories">
-                                        <button  type="submit">Delete ALL</button>
+                                        <button class="btn btn-danger"  type="submit">Delete ALL</button>
                                     </a>
                                 </th>
                             </tr>
@@ -61,7 +61,7 @@
                                     <td>
                                         <a href="<c:url value="/admin/category/view/${category.id}"/>"
                                            title="Watch category ${category.title}">
-                                            <button class="btn btn-success" type="submit">Watch</button>
+                                            <button class="btn btn-info" type="submit">Watch</button>
                                         </a>
                                         <a href="<c:url value="/admin/category/edit/${category.id}"/>"
                                            title="Edit category ${category.title}">

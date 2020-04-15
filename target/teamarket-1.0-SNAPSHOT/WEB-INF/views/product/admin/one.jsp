@@ -22,7 +22,7 @@
         <section id="product">
             <div>
                 <div>
-                    <div>
+                    <div  class="centre-span">
                         <b><span >Product </span><span>"${product.title}"</span></b>
                     </div>
                 </div>

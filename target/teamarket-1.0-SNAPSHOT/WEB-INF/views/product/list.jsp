@@ -5,8 +5,10 @@
 
 <c:if test="${fn:length(products) gt 0}">
     <c:forEach items="${products}" var="product">
+        <link href="<c:url value="/resources/style/style.css"/>" rel="stylesheet">
+
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <div    class="col-xs-6 col-sm-6 col-md-6 col-lg-3 col-xl-3" id="pr-2">
+        <div    class="col-xs-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 wow pulse" id="pr-2">
             <div>
                 <a href="<c:url value="/product/${product.url}"/>" title="Go to ${product.title}">
                     <img src="<c:url value="/resources/images/${product.photo.smallUrl}"/>"

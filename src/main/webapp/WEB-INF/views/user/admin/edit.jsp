@@ -21,7 +21,7 @@
         <section id="user">
             <div >
                 <div >
-                    <div>
+                    <div  class="centre-span">
                         <b><span >${user.name}</span></b>
                     </div>
                 </div>
@@ -30,7 +30,7 @@
                         <input type="hidden" name="id" value="${user.id}">
                         <table class="table">
                             <tr>
-                                <th>Имя:</th>
+                                <th>Name:</th>
                                 <td>
                                     <input type="text" name="name" minlength="2" maxlength="50"
                                            placeholder=" Add name" value="${user.name}" required>

@@ -88,7 +88,7 @@ public final class StringGenerator implements Generator<String> {
     /**
      * Generates random string.
      *
-     * @return The generated string (newer null).
+     * @return The generated string (never null).
      */
     @Override
     public String generate() {

@@ -34,9 +34,6 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
     /**
      * Возвращает объект корзину.
      * Режим только для чтения.
-     *
-     * @return Объект класса {@link ShoppingCart} - торговая корзина.
-     * @throws NullPointerException Бросает исключение, если корзина отсутствует.
      */
     @Override
     @Transactional(readOnly = true)
@@ -50,9 +47,6 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
 
     /**
      * Добавляет торговую позицию в список корзины.
-     *
-     * @param position Торговая позиция,
-     *                 которая будет добавлена в корзину.
      */
     @Override
     @Transactional
@@ -65,8 +59,6 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
     /**
      * Возвращает список всех торговых позиций в корзине.
      * Режим только для чтения.
-     *
-     * @return Объект типа {@link List} - список торговых позиций.
      */
     @Override
     @Transactional(readOnly = true)
@@ -76,8 +68,6 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
 
     /**
      * Удаляет торговую позицию из корзины.
-     *
-     * @param position Торговая позиция для удаления из корзины.
      */
     @Override
     @Transactional
@@ -100,8 +90,6 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
     /**
      * Возвращает цену корзины - цена всех продаж.
      * Режим только для чтения.
-     *
-     * @return Значение типа double - цена корзины.
      */
     @Override
     @Transactional(readOnly = true)
@@ -112,8 +100,6 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
     /**
      * Возвращает размер корзины, то есть количество товаров в корзине.
      * Режим только для чтения.
-     *
-     * @return Значение типа int - количество товаров в корзине.
      */
     @Override
     @Transactional(readOnly = true)

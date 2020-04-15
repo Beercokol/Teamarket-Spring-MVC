@@ -26,7 +26,7 @@ import java.util.List;
 import static ru.market.util.validator.ObjectValidator.*;
 
 @Service
-@ComponentScan(basePackages = "ua.com.alexcoffee.repository")
+@ComponentScan(basePackages = "ru.market.repository")
 public  class UserServiceImpl extends MainServiceImpl<User> implements UserService, UserDetailsService {
 
     /**
@@ -50,9 +50,6 @@ public  class UserServiceImpl extends MainServiceImpl<User> implements UserServi
      * Конструктор для инициализации основных переменных сервиса.
      * Помечаный аннотацией @Autowired, которая позволит Spring
      * автоматически инициализировать объект.
-     *
-     * @param repository     Реализация интерфейса {@link UserRepository}
-     *                       для работы пользователей с базой данных.
      */
     @Autowired
     @SuppressWarnings("SpringJavaAutowiringInspection")
@@ -64,13 +61,6 @@ public  class UserServiceImpl extends MainServiceImpl<User> implements UserServi
     /**
      * Возвращает пользователя, у которого совпадает имя с
      * значением входящего параметра. Режим только для чтения.
-     *
-     * @param name Имя пользователя для возврата.
-     * @return Объект класса {@link User} - пользователь с именем name.
-     * @throws IllegalArgumentException Бросает исключение,
-     *                                  когда пустой входной параметр name.
-     * @throws NullPointerException     Бросает исключение,
-     *                                  если не найден пользователь с входящим параметром name.
      */
     @Override
     @Transactional(readOnly = true)
@@ -88,13 +78,6 @@ public  class UserServiceImpl extends MainServiceImpl<User> implements UserServi
     /**
      * Возвращает пользователя, у которого совпадает уникальный
      * логин с значением входящего параметра. Режим только для чтения.
-     *
-     * @param username Логин пользователя для возврата.
-     * @return Объект класса {@link User} - пользователь с логином username.
-     * @throws IllegalArgumentException Бросает исключение,
-     *                                  если пустой входной параметр username.
-     * @throws NullPointerException     Бросает исключение,
-     *                                  если не найден пользователь с входящим параметром username.
      */
     @Override
     @Transactional(readOnly = true)
@@ -113,10 +96,6 @@ public  class UserServiceImpl extends MainServiceImpl<User> implements UserServi
     /**
      * Возвращает главного администратора сайта.
      * Режим только для чтения.
-     *
-     * @return Объект класса {@link User} - главный администратор.
-     * @throws NullPointerException Бросает исключение,
-     *                              если не найден пользователь-админ.
      */
     @Override
     @Transactional(readOnly = true)
@@ -131,8 +110,6 @@ public  class UserServiceImpl extends MainServiceImpl<User> implements UserServi
     /**
      * Возвращает список всех администраторов сайта.
      * Режим только для чтения.
-     *
-     * @return Объект типа {@link List} - список администраторов.
      */
     @Override
     @Transactional(readOnly = true)
@@ -143,8 +120,6 @@ public  class UserServiceImpl extends MainServiceImpl<User> implements UserServi
     /**
      * Возвращает список всех клиентов сайта.
      * Режим только для чтения.
-     *
-     * @return Объект типа {@link List} - список клиентов.
      */
     @Override
     @Transactional(readOnly = true)
@@ -155,9 +130,6 @@ public  class UserServiceImpl extends MainServiceImpl<User> implements UserServi
     /**
      * Возвращает список персонала сайта.
      * Режим только для чтения.
-     *
-     * @return Объект типа {@link List} -
-     * список персонала.
      */
     @Override
     @Transactional(readOnly = true)
@@ -170,8 +142,6 @@ public  class UserServiceImpl extends MainServiceImpl<User> implements UserServi
     /**
      * Возвращает авторизированого пользователя.
      * Режим только для чтения.
-     *
-     * @return Объект класса {@link User} - авторизированый пользователь.
      */
     @Override
     @Transactional(readOnly = true)
@@ -190,8 +160,6 @@ public  class UserServiceImpl extends MainServiceImpl<User> implements UserServi
 
     /**
      * Удаляет пользователя, у которого совпадает имя с значением входящего параметра.
-     *
-     * @param name Имя пользователя для удаления.
      */
     @Override
     @Transactional
@@ -204,8 +172,6 @@ public  class UserServiceImpl extends MainServiceImpl<User> implements UserServi
     /**
      * Удаляет пользователя из базы даных, у которого совпадает
      * роль с значением входящего параметра.
-     *
-     * @param role Роль пользователя для удаления.
      */
     @Override
     @Transactional
@@ -233,11 +199,6 @@ public  class UserServiceImpl extends MainServiceImpl<User> implements UserServi
      * Возвращает пользователя, у которого совпадает уникальный
      * логин с значением входящего параметра. Режим только для чтения.
      * Реализованый метод интерфейса {@link UserDetailsService}.
-     *
-     * @param username Логин пользователя для возврата
-     * @return Объект класса {@link User} - пользователь с логином username.
-     * @throws UsernameNotFoundException Бросает исключеник,
-     *                                   если пользователь с логином username не найден.
      */
     @Override
     @Transactional(readOnly = true)

@@ -18,12 +18,12 @@ import java.util.List;
 @Table(name = "products")
 public final class Product extends Model {
     /**
-     * Номер версии класса необходимый для десериализации и сериализации.
+     * The class version number required for deserialization and serialization.
      */
     private static final long serialVersionUID = 1L;
 
     /**
-     * Артикль товара.
+     * Article of goods.
      */
     @Column(
             name = "article",
@@ -32,7 +32,7 @@ public final class Product extends Model {
     private int article = 0;
 
     /**
-     * Название товара.
+     * Product Name.
      */
     @Column(
             name = "title",
@@ -41,7 +41,7 @@ public final class Product extends Model {
     private String title = "";
 
     /**
-     * URL товара.
+     * Product URL
      */
     @Column(
             name = "url",
@@ -50,19 +50,19 @@ public final class Product extends Model {
     private String url = "";
 
     /**
-     * Параметры товара.
+     * Product Parameters.
      */
     @Column(name = "parameters")
     private String parameters = "";
 
     /**
-     * Описание товара.
+     * Product description.
      */
     @Column(name = "description")
     private String description = "";
 
     /**
-     * Категория товара.
+     * Product Category
      */
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(
@@ -72,7 +72,7 @@ public final class Product extends Model {
     private Category category;
 
     /**
-     * Изображение товара.
+     * Product Image.
      */
     @OneToOne(
             fetch = FetchType.EAGER,
@@ -85,7 +85,7 @@ public final class Product extends Model {
     private Photo photo;
 
     /**
-     * Цена товара. Значение поля сохраняется в колонке "description". Не может быть null.
+     * The price of the product. The field value is stored in the "description" column. It cannot be null.
      */
     @Column(
             name = "price",
@@ -94,7 +94,7 @@ public final class Product extends Model {
     private double price = 0;
 
     /**
-     * Изображение товара.
+     *Product Image.
      */
     @OneToMany(
             fetch = FetchType.LAZY,
@@ -103,10 +103,7 @@ public final class Product extends Model {
     )
     private List<SalePosition> salePositions = new ArrayList<>();
 
-    /**
-     * Возвращает описание товара.
-     * Переопределенный метод родительского класса {@link Object}.
-     */
+
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder();
@@ -125,9 +122,6 @@ public final class Product extends Model {
         return sb.toString();
     }
 
-    /**
-     * Сравнивает текущий объект с объектом переданым как параметр.
-     */
     @Override
     public boolean equals(Object object) {
         boolean result = super.equals(object);
@@ -143,9 +137,6 @@ public final class Product extends Model {
         return result;
     }
 
-    /**
-     * Возвращает хеш код объекта.
-     */
     @Override
     public int hashCode() {
         int result = this.article;

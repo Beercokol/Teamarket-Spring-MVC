@@ -21,7 +21,7 @@ import static ru.market.util.validator.ObjectValidator.isNotNull;
 @Table(name = "orders")
 public final class Order extends Model {
     /**
-     * Номер версии класса необходимый для десериализации и сериализации.
+     * The class version number required for deserialization and serialization.
      */
     private static final long serialVersionUID = 1L;
 
@@ -51,7 +51,7 @@ public final class Order extends Model {
     private OrderStatus status = OrderStatus.NEW;
 
     /**
-     * Клиент, оформивший заказ.
+     * The customer who placed the order.
      */
     @OneToOne(
             fetch = FetchType.EAGER,
@@ -64,7 +64,7 @@ public final class Order extends Model {
     private User client;
 
     /**
-     * Менеджер, обработавший заказ. Значение поля (id объекта manager)
+     * The admin who processed the order. Field value (id of admin object)
      */
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(
@@ -74,7 +74,7 @@ public final class Order extends Model {
     private User manager;
 
     /**
-     * Список торговых позиция текущего заказу.
+     * List of trading position of the current order.
      */
     @OneToMany(
             fetch = FetchType.EAGER,
@@ -86,9 +86,6 @@ public final class Order extends Model {
     protected Order() {
     }
 
-    /**
-     * Возвращает описание заказа.
-     */
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder();
@@ -173,7 +170,7 @@ public final class Order extends Model {
     }
 
     /**
-     * Добавляет торговую позицию в текущий заказа.
+     * Adds a sales item to the current order.
      */
     public void addSalePosition(final SalePosition position) {
         if (isNotNull(position)) {
@@ -185,7 +182,7 @@ public final class Order extends Model {
     }
 
     /**
-     * Добавляет список торговых позиций в текущий заказ.
+     * Adds a list of sales items to the current order.
      */
     public void addSalePositions(final Collection<SalePosition> positions) {
         if (isNotEmpty(positions)) {
@@ -194,7 +191,7 @@ public final class Order extends Model {
     }
 
     /**
-     * Удаляет торговую позицию из текущего заказа.
+     * Removes a sales item from the current order.
      */
     public void removeSalePosition(final SalePosition position) {
         if (isNotNull(position)) {
@@ -203,7 +200,7 @@ public final class Order extends Model {
     }
 
     /**
-     * Удаляет список торговых позиция из текущего заказа.
+     * Deletes the list of trading positions from the current order.
      */
     public void removeSalePositions(final Collection<SalePosition> positions) {
         if (isNotEmpty(positions)) {
@@ -212,7 +209,7 @@ public final class Order extends Model {
     }
 
     /**
-     * Очищает список торговых позиция текущего заказа.
+     * Clears the list of trading positions of the current order.
      */
     public void clearSalePositions() {
         this.salePositions.clear();

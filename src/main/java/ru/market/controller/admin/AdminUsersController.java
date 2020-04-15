@@ -24,11 +24,6 @@ import static ru.market.util.validator.ObjectValidator.*;
  * и соответствующим страницам могут обращатсья пользователи, имеющие роль-админстратор.
  * Аннотация @Controller служит для сообщения Spring'у о том, что данный класс является bean'ом
  * и его необходимо подгрузить при старте приложения.
- * Аннотацией @RequestMapping(value = "/admin/user") сообщаем, что данный контроллер будет
- * обрабатывать запросы, URI которых начинается с "/admin/user".
- * Методы класса работают с объектом, возвращенным handleRequest методом,
- * является типом {@link ModelAndView}, который агрегирует все параметры модели и имя отображения.
- * Этот тип представляет Model и View в MVC шаблоне.
  */
 @Controller
 @RequestMapping(value = "/admin/user")
@@ -43,8 +38,6 @@ public final class AdminUsersController {
      * Конструктор для инициализации основных переменных контроллера пользователями.
      * Помечен аннотацией @Autowired, которая позволит Spring автоматически
      * инициализировать объекты.
-     *
-     * @param userService Объект сервиса для работы с пользователями.
      */
     @Autowired
     public AdminUsersController(final UserService userService) {
@@ -55,8 +48,6 @@ public final class AdminUsersController {
      * Возвращает всех пользователей на страницу "admin/user/all".
      * URL запроса {"/admin/user", "/admin/user/", "/admin/user/all"},
      * метод GET.
-     *
-     * @return Объект класса {@link ModelAndView}.
      */
     @RequestMapping(
             value = { "", "/", "/all" },
@@ -74,9 +65,6 @@ public final class AdminUsersController {
     /**
      * Возвращает пользователя с уникальным кодом id на страницу "admin/user/one".
      * URL запроса "/admin/user/view/{id}", метод GET.
-     *
-     * @param id           Код категории, которою нужно вернуть.
-     * @return Объект класса {@link ModelAndView}.
      */
     @RequestMapping(
             value = "/view/{id}",
@@ -95,8 +83,6 @@ public final class AdminUsersController {
      * Возвращает страницу "admin/user/add" для добавления нового пользователе,
      * члена персонала (администратора или менеджера).
      * URL запроса "/admin/user/add", метод GET.
-     *
-     * @return Объект класса {@link ModelAndView}.
      */
     @RequestMapping(
             value = "/add",
@@ -114,18 +100,6 @@ public final class AdminUsersController {
      * Сохраняет нового пользователя по входящим параметрам и
      * перенаправляет по запросу "/admin/user/all".
      * URL запроса "/admin/user/save", метод POST.
-     *
-     * @param name         Имя нового пользователя.
-     * @param roleName     Код роли пользователя.
-     * @param username     Логин пользователя для входа в аккаунт на сайте.
-     * @param password     Пароль пользователя для входа в аккаунт на сайте.
-     * @param email        Электронная почта пользователя.
-     * @param phone        Номер телефона пользователя.
-     * @param vkontakte    Ссылка на страничку в соц. сети "ВКонтакте" пользователя.
-     * @param facebook     Ссылка на страничку в соц. сети "Facebook" пользователя.
-     * @param skype        Логин пользователя в месенджере "Skype".
-     * @param description  Описание пользователя.
-     * @return Объект класса {@link ModelAndView}.
      */
     @RequestMapping(
             value = "/save",
@@ -181,10 +155,6 @@ public final class AdminUsersController {
      * Возвращает страницу "admin/user/edit" для редактирование пользователя
      * с уникальным кодом, который совпадает с параметром id.
      * URL запроса "/admin/user/edit/{id}", метод GET.
-     *
-     * @param id           Код пользователя, информацию о котором
-     *                     нужно отредактировать.
-     * @return Объект класса {@link ModelAndView}.
      */
     @RequestMapping(
             value = "/edit/{id}",
@@ -203,19 +173,6 @@ public final class AdminUsersController {
      * Обновляет пользователя по входящим параметрам и перенаправляет
      * по запросу "/admin/user/view/{id}".
      * URL запроса "/admin/user/update", метод POST.
-     *
-     * @param id           Код пользователя для обновления.
-     * @param name         Имя пользователя.
-     * @param roleName     Код роли пользователя.
-     * @param username     Логин пользователя для входа в аккаунт на сайте.
-     * @param password     Пароль пользователя для входа в аккаунт на сайте.
-     * @param email        Электронная почта пользователя.
-     * @param phone        Номер телефона пользователя.
-     * @param vkontakte    Ссылка на страничку в соц. сети "ВКонтакте" пользователя.
-     * @param facebook     Ссылка на страничку в соц. сети "Facebook" пользователя.
-     * @param skype        Логин пользователя в месенджере "Skype".
-     * @param description  Описание пользователя.
-     * @return Объект класса {@link ModelAndView}.
      */
     @RequestMapping(
             value = "/update",
@@ -253,9 +210,6 @@ public final class AdminUsersController {
     /**
      * Возвращает исключение IllegalMappingException, если обратится
      * по запросу "/admin/user/update" методом GET.
-     *
-     * @throws IllegalMappingException Бросает исключение, если обратится к
-     *                                 этому методу GET.
      */
     @RequestMapping(
             value = "/update",
@@ -271,9 +225,6 @@ public final class AdminUsersController {
      * Удаляет пользователя с уникальным кодом, который совпадает с входящим параметром id,
      * и перенаправляет по запросу "/admin/user/all".
      * URL запроса "/admin/user/delete/{id}", метод GET.
-     *
-     * @param id           Код пользвателя, которого нужно удалить.
-     * @return Объект класса {@link ModelAndView}.
      */
     @RequestMapping(
             value = "/delete/{id}",
@@ -289,8 +240,6 @@ public final class AdminUsersController {
     /**
      * Удаляет всех пользователей и перенаправляет по запросу "/admin/user/all".
      * URL запроса "/admin/user/delete_all", метод GET.
-     *
-     * @return Объект класса {@link ModelAndView}.
      */
     @RequestMapping(
             value = "/delete_all",

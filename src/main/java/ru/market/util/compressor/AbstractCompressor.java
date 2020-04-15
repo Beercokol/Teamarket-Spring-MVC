@@ -21,7 +21,7 @@ abstract class AbstractCompressor implements Compressor {
      * </pre>
      *
      * @param source the source to compress.
-     * @return Compressed result or empty string (newer null).
+     * @return Compressed result or empty string (never null).
      */
     @Override
     public String compress(final String source) {
@@ -35,8 +35,6 @@ abstract class AbstractCompressor implements Compressor {
 
     /**
      * Returns a compressor object.
-     *
-     * @return The compressor instance.
      */
     abstract Compressor getCompressor();
 }

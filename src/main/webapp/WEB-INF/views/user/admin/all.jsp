@@ -22,7 +22,7 @@
         <section id="persons">
             <div>
                 <div>
-                    <div>
+                    <div  class="centre-span">
                         <b>
                             <span>Staff</span>
                             <c:if test="${fn:length(users) eq 0}">
@@ -70,7 +70,7 @@
                                     <td>
                                         <a href="<c:url value="/admin/user/view/${user.id}"/>"
                                            title="View information ${user.name}">
-                                            <button class="btn-success"  type="submit">Watch</button>
+                                            <button class="btn-info"  type="submit">Watch</button>
                                         </a>
                                         <a href="<c:url value="/admin/user/edit/${user.id}"/>"
                                            title="Edit information about ${user.name}">

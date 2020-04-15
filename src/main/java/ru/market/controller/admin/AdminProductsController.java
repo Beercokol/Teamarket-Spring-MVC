@@ -64,11 +64,6 @@ public final class AdminProductsController {
      * Конструктор для инициализации основных переменных контроллера товаров.
      * Помечен аннотацией @Autowired, которая позволит Spring автоматически
      * инициализировать объекты.
-     *
-     * @param productService  Объект сервисадля работы с товаров.
-     * @param categoryService Объект сервиса для работы с категориями товаров.
-     * @param photoService    Объект сервиса для работы с изображенями товаров.
-     * @param userService     Объект сервиса для работы с пользователями.
      */
     @Autowired
     public AdminProductsController(
@@ -87,8 +82,6 @@ public final class AdminProductsController {
      * Возвращает все товары на страницу "admin/product/all".
      * URL запроса {"/admin/product", "/admin/product/", "/admin/product/all"},
      * метод GET.
-     *
-     * @return Объект класса {@link ModelAndView}.
      */
     @RequestMapping(
             value = { "", "/", "/all" },
@@ -105,9 +98,6 @@ public final class AdminProductsController {
     /**
      * Возвращает товар с уникальным кодом id на страницу "admin/product/one".
      * URL запроса "/admin/view/{id}", метод GET.
-     *
-     * @param id           Код товара, который нужно вернуть.
-     * @return Объект класса {@link ModelAndView}.
      */
     @RequestMapping(
             value = "/view/{id}",
@@ -124,8 +114,6 @@ public final class AdminProductsController {
     /**
      * Возвращает страницу "admin/product/add" для добавления нового товара.
      * URL запроса "/admin/product/add", метод GET.
-     *
-     * @return Объект класса {@link ModelAndView}.
      */
     @RequestMapping(
             value = "/add",
@@ -144,19 +132,6 @@ public final class AdminProductsController {
      * Сохраняет новый товар по входящим параметрам и перенаправляет
      * по запросу "/admin/product/all".
      * URL запроса "/admin/product/save", метод POST.
-     *
-     * @param title          Название товара
-     * @param url            URL товара.
-     * @param parameters     Параметры товара.
-     * @param description    Описание товара.
-     * @param categoryId     Код категории, к которой пренадлежит товар.
-     * @param photoTitle     Название изображения товара.
-     * @param smallPhotoFile Файл меленького изображения для сохранения
-     *                       в файловой системе.
-     * @param bigPhotoFile   Файл большго изображения для сохранения
-     *                       в файловой системе.
-     * @param price          Цена товара.
-     * @return Объект класса {@link ModelAndView}.
      */
     @RequestMapping(
             value = "/save",
@@ -205,9 +180,6 @@ public final class AdminProductsController {
     /**
      * Возвращает исключение IllegalMappingException, если обратится
      * по запросу "/admin/product/save" методом GET.
-     *
-     * @throws IllegalMappingException Бросает исключение, если обратится к
-     *                                 этому методу GET.
      */
     @RequestMapping(
             value = "/save",
@@ -223,9 +195,6 @@ public final class AdminProductsController {
      * Возвращает страницу "admin/product/edit" для редактирование товара с уникальным
      * кодом, который совпадает с параметром id.
      * URL запроса "/admin/product/edit/{id}", метод GET.
-     *
-     * @param id           Код товара, который нужно отредактировать.
-     * @return Объект класса {@link ModelAndView}.
      */
     @RequestMapping(
             value = "/edit/{id}",
@@ -245,21 +214,6 @@ public final class AdminProductsController {
      * Обновляет товар по входящим параметрам и перенаправляет
      * по запросу "/admin/product/view/{id}".
      * URL запроса "/admin/product/update", метод POST.
-     *
-     * @param id             Код товара для обновления.
-     * @param title          Название товара.
-     * @param url            URL товара.
-     * @param parameters     Параметры товара.
-     * @param description    Описание товара.
-     * @param categoryId     Код категории, к которой пренадлежит товар.
-     * @param photoId        Код изображения товара.
-     * @param photoTitle     Название изображения товара.
-     * @param smallPhotoFile Файл меленького изображения для сохранения
-     *                       в файловой системе.
-     * @param bigPhotoFile   Файл большго изображения для сохранения
-     *                       в файловой системе.
-     * @param price          Цена товара.
-     * @return Объект класса {@link ModelAndView}.
      */
     @RequestMapping(
             value = "/update",
@@ -308,9 +262,6 @@ public final class AdminProductsController {
     /**
      * Возвращает исключение IllegalMappingException, если обратится
      * по запросу "/admin/product/update" методом GET.
-     *
-     * @throws IllegalMappingException Бросает исключение, если обратится
-     *                                 к этому методу GET.
      */
     @RequestMapping(
             value = "/update",
@@ -326,9 +277,6 @@ public final class AdminProductsController {
      * Удаляет товар с уникальным кодом, который совпадает с входящим параметром id,
      * и перенаправляет по запросу "/admin/products".
      * URL запроса "/admin/product/delete/{id}", метод GET.
-     *
-     * @param id           Код товара, который нужно удалить.
-     * @return Объект класса {@link ModelAndView}.
      */
     @RequestMapping(
             value = "/delete/{id}",
@@ -342,8 +290,6 @@ public final class AdminProductsController {
     /**
      * Удаляет все товары и перенаправляет по запросу "/admin/product/all".
      * URL запроса "/admin/product/delete_all", метод GET.
-     *
-     * @return Объект класса {@link ModelAndView}.
      */
     @RequestMapping(
             value = "/delete_all",

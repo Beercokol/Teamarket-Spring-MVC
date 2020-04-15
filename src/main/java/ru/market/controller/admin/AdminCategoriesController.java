@@ -58,10 +58,6 @@ public final class AdminCategoriesController {
      * Конструктор для инициализации основных переменных контроллера категорий.
      * Помечен аннотацией @Autowired, которая позволит Spring автоматически
      * инициализировать объекты.
-     *
-     * @param categoryService Объект сервиса для работы с категориями товаров.
-     * @param photoService    Объект сервиса для работы с изображениями категорий.
-     * @param userService     Объект сервиса для работы с пользователями.
      */
     @Autowired
     public AdminCategoriesController(
@@ -78,8 +74,6 @@ public final class AdminCategoriesController {
      * Возвращает все категории товаров на страницу "admin/category/all".
      * URL запроса {"/admin/category", "/admin/category/", "/admin/category/all"},
      * метод GET.
-     *
-     * @return Объект класса {@link ModelAndView}.
      */
     @RequestMapping(
             value = { "", "/", "/all" },
@@ -96,9 +90,6 @@ public final class AdminCategoriesController {
     /**
      * Возвращает категорию с уникальным кодом id на страницу "admin/category/one".
      * URL запроса "/admin/category/view/{id}", метод GET.
-     *
-     * @param id           Код категории, которою нужно вернуть.
-     * @return Объект класса {@link ModelAndView}.
      */
     @RequestMapping(
             value = "/view/{id}",
@@ -117,8 +108,6 @@ public final class AdminCategoriesController {
      * для добавления новой категории.
      * URL запроса "/admin/category/add",
      * метод GET.
-     *
-     * @return Объект класса {@link ModelAndView}.
      */
     @RequestMapping(
             value = "/add",
@@ -136,13 +125,6 @@ public final class AdminCategoriesController {
      * Сохраняет новую категорию по входящим параметрам и перенаправляет по запросу
      * "/admin/category/all".
      * URL запроса "/admin/category/save", метод POST.
-     *
-     * @param title        Название категории.
-     * @param url          URL категории.
-     * @param description  Описание категории.
-     * @param photoTitle   Название изображения категории.
-     * @param photoFile    Файл-изображение для сохранения в файловой системе.
-     * @return Объект класса {@link ModelAndView}.
      */
     @RequestMapping(
             value = "/save",
@@ -175,8 +157,6 @@ public final class AdminCategoriesController {
     /**
      * Возвращает исключение IllegalMappingException, если обратится по запросу
      * "/admin/category/save" методом GET.
-     *
-     * @throws IllegalMappingException Бросает исключение, если обратится к этому методу GET.
      */
     @RequestMapping(
             value = "/save",
@@ -192,9 +172,6 @@ public final class AdminCategoriesController {
      * Возвращает страницу "admin/category/edit" для редактирование категории
      * с уникальным кодом, который совпадает с параметром id.
      * URL запроса "/admin/category/edit/{id}", метод GET.
-     *
-     * @param id           Код категории, которую нужно отредактировать.
-     * @return Объект класса {@link ModelAndView}.
      */
     @RequestMapping(
             value = "/edit/{id}",
@@ -213,15 +190,6 @@ public final class AdminCategoriesController {
      * Обновляет категорию по входящим параметрам и перенаправляет
      * по запросу "/admin/category/view/{id}".
      * URL запроса "/admin/category/update", метод POST.
-     *
-     * @param id           Код категории для обновления.
-     * @param title        Название категории.
-     * @param url          URL категории.
-     * @param description  Описание категории.
-     * @param photoId      Код изображения категории.
-     * @param photoTitle   Название изображения.
-     * @param photoFile    Файл-изображение для сохранения в файловой системе.
-     * @return Объект класса {@link ModelAndView}.
      */
     @RequestMapping(
             value = "/update",
@@ -272,9 +240,6 @@ public final class AdminCategoriesController {
      * Удаляет категорию с уникальным кодом, который совпадает с входящим параметром id,
      * и перенаправляет по запросу "/admin/category/all".
      * URL запроса "/admin/category/delete/{id}", метод GET.
-     *
-     * @param id           Код категории, которою нужно удалить.
-     * @return Объект класса {@link ModelAndView}.
      */
     @RequestMapping(
             value = "/delete/{id}",
@@ -288,8 +253,6 @@ public final class AdminCategoriesController {
     /**
      * Удаляет все категории и перенаправляет по запросу "/admin/category/all".
      * URL запроса "/admin/category/delete_all", метод GET.
-     *
-     * @return Объект класса {@link ModelAndView}.
      */
     @RequestMapping(
             value = "/delete_all",

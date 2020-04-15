@@ -23,9 +23,9 @@
             <div >
                 <c:set var="orders_length" value="${fn:length(orders)}"/>
                 <div >
-                    <div >
+                    <div class="centre-span">
                         <b>
-                            <span >Orders</span>
+                            <span  >Orders</span>
                             <c:if test="${orders_length eq 0}">
                                 <span> - is empty!</span>
                             </c:if>
@@ -61,7 +61,7 @@
                                     <td>
                                         <a href="<c:url value="/admin/order/view/${order.id}"/>"
                                            title="Watch order ${order.number}">
-                                            <button class="btn btn-success" type="submit">Watch</button>
+                                            <button class="btn btn-info" type="submit">Watch</button>
                                         </a>
                                         <a href="<c:url value="/admin/order/edit/${order.id}"/>"
                                            title="Edit order ${order.number}">

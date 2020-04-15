@@ -22,7 +22,7 @@
         <section id="order">
             <div>
                 <div>
-                    <div>
+                    <div  class="centre-span">
                         <b>
                             <span> Order editing :</span>
                             <span >${order.number}</span>
@@ -31,8 +31,8 @@
                 </div>
                 <div>
                     <form action="<c:url value="/admin/order/update"/>" method="post">
-                        <input name="id" value="${order.id}">
-                        <input  name="auth_user" value="${auth_user.id}">
+                        <input class="id-input" name="id" value="${order.id}">
+                        <input class="id-input"  name="auth_user" value="${auth_user.id}">
                         <table >
                             <tr>
                                 <th>Number:</th>

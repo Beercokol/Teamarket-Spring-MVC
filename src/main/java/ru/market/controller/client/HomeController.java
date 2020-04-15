@@ -54,11 +54,6 @@ public final class HomeController {
      * Конструктор для инициализации основных переменных контроллера главных страниц сайта.
      * Помечен аннотацией @Autowired, которая позволит Spring автоматически инициализировать
      * объекты.
-     *
-     * @param productService      Объект сервиса для работы с товарами.
-     * @param categoryService     Объект сервиса для работы с категориями товаров.
-     * @param shoppingCartService Объект сервиса для работы с торговой корзиной.
-     * @param orderService        Объект сервиса для работы с заказами.
      */
     @Autowired
     public HomeController(
@@ -98,9 +93,6 @@ public final class HomeController {
      * Возвращает страницу "client/category" с товарами, которые пренадлежат
      * категории с url.
      * URL запроса "/category/{url}", метод GET.
-     *
-     * @param url          URL категории, товары которой нужно вернуть на странице.
-     * @return Объект класса {@link ModelAndView}.
      */
     @RequestMapping(
             value = "/category/{url}",
@@ -138,10 +130,6 @@ public final class HomeController {
      * который совпадает с входящим параметром url.
      * URL запроса "/product/{url}", метод GET.
      * В запросе в параметре url можно передавать как URL так и артикль товара.
-     *
-     * @param url          URL или артикль товара, который нужно вернуть
-     *                     на страницу.
-     * @return Объект класса {@link ModelAndView}.
      */
     @RequestMapping(
             value = "/product/{url}",
@@ -174,8 +162,6 @@ public final class HomeController {
      * Возвращает страницу "client/cart" - страница корзины с торговыми
      * позициями, которие сделал клиент.
      * URL запроса "/cart", метод GET.
-     *
-     * @return Объект класса {@link ModelAndView}.
      */
     @RequestMapping(
             value = "/cart",
@@ -193,9 +179,6 @@ public final class HomeController {
     /**
      * Добавляет товар с уникальным кодом id в корзину и перенаправляет по запросу "/cart".
      * URL запроса "/cart/add", метод POST.
-     *
-     * @param id           Код товара, который нужно добавить в корзину.
-     * @return Объект класса {@link ModelAndView}.
      */
     @RequestMapping(
             value = "/cart/add",
@@ -232,10 +215,6 @@ public final class HomeController {
      * Быстрое добавления товара с уникальным номером id в корзину и перенаправление
      * по запросу входящего параметра url.
      * URL запроса "/cart/add_quickly", метод POST.
-     *
-     * @param id           Код товара, который нужно добавить в корзину.
-     * @param url          URL запроса для перенаправления.
-     * @return Объект класса {@link ModelAndView}.
      */
     @RequestMapping(
             value = "/cart/add_quickly",
@@ -257,9 +236,6 @@ public final class HomeController {
     /**
      * Возвращает исключение IllegalMappingException, если обратится
      * по запросу "/cart/add_quickly" методом GET.
-     *
-     * @throws IllegalMappingException Бросает исключение, если обратится к
-     *                                 этому методу GET.
      */
     @RequestMapping(
             value = "/cart/add_quickly",
@@ -290,11 +266,6 @@ public final class HomeController {
      * Оформляет и сохраняет заказ клиента, возвращает страницу "client/checkout".
      * Если корзина пуста, по перенаправляет на главную страницу.
      * URL запроса "/checkout", метод POST.
-     *
-     * @param name         Имя клиента, сжелавшего заказ.
-     * @param email        Электронная почта клиента.
-     * @param phone        Номер телефона клиента.
-     * @return Объект класса {@link ModelAndView}.
      */
     @RequestMapping(value = "/checkout", method = RequestMethod.POST)
     public ModelAndView viewCheckout(
@@ -365,14 +336,4 @@ public final class HomeController {
         return "redirect:/admin/order/all";
     }
 
-    /**
-     * Перенаправляет на страницу с заказами для менеджера.
-     */
-    @RequestMapping(
-            value = { "/managers", "/managers/" },
-            method = RequestMethod.GET
-    )
-    public String redirectToManagerPage() {
-        return "redirect:/admin/order/all";
-    }
 }

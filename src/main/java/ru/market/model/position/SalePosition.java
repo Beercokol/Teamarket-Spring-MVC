@@ -19,7 +19,7 @@ import static ru.market.util.validator.ObjectValidator.*;
 public class SalePosition extends Model {
 
     /**
-     * Товар текущей торговой позици.
+     *Product of the current trading position.
      */
     @OneToOne(fetch = FetchType.EAGER)
     @JoinColumn(
@@ -30,7 +30,7 @@ public class SalePosition extends Model {
     private Product product;
 
     /**
-     * Количество товаров в текущей торговой позиции.
+     *The number of products in the current trading position.
      */
     @Column(
             name = "number",
@@ -39,7 +39,7 @@ public class SalePosition extends Model {
     private int number = 0;
 
     /**
-     * Заказ, к которому относится текущая торговая позиция
+     * Order to which the current sales item belongs
      */
     @ManyToOne(
             fetch = FetchType.LAZY,
@@ -52,9 +52,6 @@ public class SalePosition extends Model {
     )
     private Order order;
 
-    /**
-     * Возвращает описание торговой позиции.
-     */
     @Override
     public String toString() {
         return "SalePosition #" + getId()
@@ -65,9 +62,6 @@ public class SalePosition extends Model {
                 + "\nPrice = " + getPrice();
     }
 
-    /**
-     * Сравнивает текущий объект с объектом переданым как параметр.
-     */
     @Override
     public boolean equals(Object object) {
         boolean result = super.equals(object);
@@ -83,9 +77,6 @@ public class SalePosition extends Model {
         return result;
     }
 
-    /**
-     * Возвращает хеш код объекта.
-     */
     @Override
     public int hashCode() {
         int result = isNotNull(this.product) ? this.product.hashCode() : 0;
@@ -99,7 +90,7 @@ public class SalePosition extends Model {
     }
 
     /**
-     * Увеличивает количество товаров в позиции на 1.
+     * Increases the number of items in the position by 1.
      */
     public void numberIncrement() {
         this.number++;
@@ -119,7 +110,7 @@ public class SalePosition extends Model {
     }
 
     /**
-     * Если входной параметр меньше 0, тогда значение номера будет 0.
+     * If the input parameter is less than 0, then the number will be 0.
      */
     public void setNumber(final int number) {
         this.number = (number > 0) ? number : 0;
